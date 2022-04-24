@@ -1,5 +1,6 @@
 /* Colores */
 /* 
+azul oscuro                 #0e3560;
 azul                        #165294
 azul liviano para textos    #01a6e0
 verde para hightlight       #3aac4f
@@ -203,7 +204,8 @@ a:hover {
     padding-top: 13px;
     padding-left: 20px;
     font-size: 30px;
-    color: #333;  
+    font-weight: bold;
+    color: #0e3560;;  
 }
 
 .main__posicionMenuTitulo {
@@ -216,7 +218,7 @@ a:hover {
     padding-left: 20px;
     padding-top: 10px;
     padding-right: 35%;
-    color: #165294;
+    color: #0e3560;;
 }
 
 .main__bordeInferiorTextSubtitulo {
@@ -235,7 +237,6 @@ a:hover {
 .main-principal__nav {
     display: none;
     width: 25%;
-    border: solid 1px red;
     padding-left: 7px;
 }
 
@@ -245,19 +246,36 @@ a:hover {
     justify-content: space-evenly;
     width: 100%;
     flex-wrap: wrap;
-    border: solid 1px blue;
     padding-bottom: 15px;
 }
 
 .main-article {
     width: 95%;
     margin-top: 15px;
-    display: inline-block;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     border: solid 1px #d8d8d8;
     border-radius: 8px;
     align-items: center;
+}
+
+.main-article__textos {
+    border: 1px solid violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main-article > div > h3 {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+}
+
+.main-article > div > p {
+    font-size: 14px;
+    color: #000;
 }
 
 .main-article > img {
@@ -301,14 +319,12 @@ a:hover {
     .main-principal__nav {
         display: flex;
         width: 25%;
-        border: solid 1px red;
     }
 
     .main-section-articles {
         display: flex;
         flex-wrap: wrap;
         width: 75%;
-        border: solid 1px blue;
     }
     
     .main-article {
