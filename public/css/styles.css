@@ -1,0 +1,370 @@
+/* Colores */
+/* 
+azul                        #165294
+azul liviano para textos    #01a6e0
+verde para hightlight       #3aac4f
+naranja muy oscuro          #e3a900
+naranja oscuro              #f9bd0e
+naranja claro               #fccc07
+gris clarito                #7a7a7a
+negro                       #000
+blanco                      #fff
+*/
+
+/* Fuentes */
+/*
+
+font-family: 'Neucha', cursive;
+
+único trazo: 400
+
+font-family: 'Nunito Sans', sans-serif;
+trazo fino: 100
+trazo normal: 400
+trazo cursiva: 400
+trazo negrita: 700
+*/
+
+/* Viewports */
+/* 
+mobile hasta 400px
+tablet hasta 770px
+full más grande que 700
+*/
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.this__displayFlex {
+    display: flex;
+}
+
+/* Estilos del header */
+
+header {
+    position: relative;
+}
+
+.header__imagen-patas {
+    position: absolute;
+    right: 0px;
+    width: 83px;
+    height: 87px;
+    z-index: -1;
+}
+
+.header__divSuperior {
+    background-color: #e3a900;
+    height: 15px;
+    border-bottom: 1px solid #d09c00;
+}
+
+
+/* Estilos del header -> sección main */
+.header__main {
+    background-color: #f9bd0e;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px;
+    height: 80px;
+    gap: 10px;
+    width: 100%;
+    border-bottom: 1px solid #e3a900;    
+    border-top: 1px solid #ffc61d;    
+}
+
+.header__divLogo {
+    width: 100px;
+}
+
+.header__main-logo {
+    width: 100px;
+}
+
+.header__divBarraBusqueda {
+    width: 100%;
+    display: flex; 
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+.header__input-text {
+    height: 24px;
+    border: #fff;
+    border-radius: 8px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.header__barraBusqueda-form {
+    width: 90%;
+}
+
+.header__main-imgLupa {
+    width: 10%;
+}
+
+.header__main-carrito {
+    color: #000;
+    font-size: 24px;
+    padding: 3px;
+    margin-right: 10px;
+}
+
+.header__main__div-precio {
+    display: none;
+}
+
+.header__main-precio {
+    display: none;
+}
+
+/* Estilos del header -> barra navegación */
+
+.header__nav-fullScreen {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content ;
+    background-color: #fccc07;
+    width: 100%;
+    border-top: 1px solid #ffde58;
+    padding: 7px 0px 7px 0px;
+    border-bottom: 1px solid #e3a900
+}
+
+.header_nav-versionesMobile {
+    padding-left: 10px;
+}
+
+.header_nav-hamgurgerMenu {
+    margin-top: 13px;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+
+.header__nav-texto > ul {
+    display: flex;
+}
+
+.header__nav-texto-izq {
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 7px;
+    gap: 10;
+}
+
+.header__nav-texto-izq > li {
+    padding-right: 15px;
+}
+
+.header__nav-texto-der {
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    list-style-type: none;
+    display: flex;
+    padding-right: 10px;
+}
+
+.header__nav-texto-der > li {
+    padding-left: 11px;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header__nav-texto-der > li {
+    padding-left: 11px;
+}
+
+/* Estilos del main */
+
+.main__tituloPagina {
+    font-family: 'Neucha', cursive;
+    padding-top: 13px;
+    padding-left: 20px;
+    font-size: 30px;
+    color: #333;  
+}
+
+.main__posicionMenuTitulo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main__texto-subtitulo {
+    font-size: 12px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 35%;
+    color: #165294;
+}
+
+.main__bordeInferiorTextSubtitulo {
+    color: #F0EFE2;
+    margin-top: 13px;
+    margin-left: 11px;
+    margin-right: 20px;
+}
+
+.main-principal {
+    display: flex;
+    width: 100%;
+    
+}
+
+.main-principal__nav {
+    display: none;
+    width: 25%;
+    border: solid 1px red;
+    padding-left: 7px;
+}
+
+
+.main-section-articles {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    border: solid 1px blue;
+    padding-bottom: 15px;
+}
+
+.main-article {
+    width: 95%;
+    margin-top: 15px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 1px #d8d8d8;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.main-article > img {
+    max-width: 150px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+
+@media (min-width: 400px) {
+    
+    .header__main__div-precio {
+        display: flex;
+        font-size: 16px;
+        font-weight: bold;
+        padding-right: 15px;
+        padding-left: 15px;
+        background-color: #fff;
+        border: solid #fff 3px;
+        border-radius: 10px;
+        color: #444;
+    }
+
+    .header__nav-fullScreen {
+        display: flex;
+    }
+
+    .header_nav-versionesMobile {
+        display: none;
+    }
+
+    .main__tituloPagina {
+        padding-top: 18px;
+    }
+
+    .main__texto-subtitulo {
+        font-size: 13px;
+        padding-right: 25%;
+    }
+
+    .main-principal__nav {
+        display: flex;
+        width: 25%;
+        border: solid 1px red;
+    }
+
+    .main-section-articles {
+        display: flex;
+        flex-wrap: wrap;
+        width: 75%;
+        border: solid 1px blue;
+    }
+    
+    .main-article {
+        width: 47%;
+    }
+
+}
+
+
+@media (min-width: 760px) {
+    
+    .header__main__div-precio {
+        display: flex;
+        font-size: 16px;
+        font-weight: bold;
+        padding-right: 15px;
+        padding-left: 15px;
+        background-color: #fff;
+        border: solid #fff 3px;
+        border-radius: 10px;
+        color: #444;
+    }
+
+    .header__nav-fullScreen {
+        display: flex;
+    }
+
+    .header_nav-versionesMobile {
+        display: none;
+    }
+
+    .main__tituloPagina {
+        padding-top: 18px;
+    }
+
+    .main__texto-subtitulo {
+        font-size: 13px;
+        padding-right: 25%;
+    }
+
+    .main-principal__nav {
+        display: flex;
+        width: 25%;
+        border: solid 1px red;
+    }
+
+    .main-section-articles {
+        display: flex;
+        flex-wrap: wrap;
+        width: 75%;
+        border: solid 1px blue;
+    }
+    
+    .main-article {
+        width: 23%;
+    }
+
+}
+

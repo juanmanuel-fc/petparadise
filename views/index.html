@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Paradise - Home page.</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+        
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Nunito+Sans:wght@200;300;400;700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/be2f25d2d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!--
+    Header con 4 divs:
+    1. superior: solo para efectos estéticos de color. visible en todos los viewports
+    2. main:  logo, barra búsqueda e ícono carrito compras. visible en todos los viewports. se adapta
+    el main a su vez tendrá una sección oculta (precio) que solo se ve en el viewport full
+    3. nav: links de navegación. solo visible en viewport tablet y full
+    4. inferior: para promos. visible en todos los viewports
+    -->
+    <header>
+        <div class="header__divSuperior">
+            
+        </div>
+        <!-- Div que tiene el logo, la barra de busqueda y el icono del carrito. el logo queda fijo, la barra se agranda y el icono de carrito también se queda fijo -->
+        <div class="header__main">
+            <!-- div para el logo -->
+            <div class="header__divLogo">
+                <a href="/" title="Ir a la página principal"><img class="header__main-logo" src="/img/logo2.png" alt="Logo Pet Paradise"></a>
+            </div>
+            <!-- div para la barra de busqueda que se expande al 100% -->
+            <div class="header__divBarraBusqueda">
+                <form class="header__barraBusqueda-form" action="">
+                    <input class="header__input-text" type="text">
+                </form>
+                <i class="fa-solid fa-magnifying-glass header__main-imgLupa"></i>
+            </div>
+            <!-- div para el icono del carrito de compras -->
+            <div class="header__divCarrito">
+                <i class="fa-solid fa-cart-shopping header__main-carrito"></i>
+            </div>
+            <!-- div para el precio, solo visto en el breakpoint full -->
+            <div class="header__main__div-precio">
+                <p>$4.427,55</p>
+            </div>
+        </div>
+        <nav>
+            <!-- Menu de navegación para resoluciones full -->
+            <div class="header__nav-fullScreen">
+                <!-- Cuerpo nav izquierdo -->
+                <div class="header__nav-texto-izq">
+                    <ul class="header__nav-texto-izq">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Perros</a></li>
+                        <li><a href="">Gatos</a></li>
+                        <li><a href="">Accesorios</a></li>
+                        <li><a href="">Servicios</a></li>
+                    </ul>
+                </div>
+                
+                <!-- cuerpo nav derecho -->
+                <div>
+                    <ul class="header__nav-texto-der">
+                        <li><a href="">Registro</a></li>
+                        <li><a href="">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Menu de navegación para resoluciones mobile y tablet -->
+        </nav>
+        <img class="header__imagen-patas" src="/img/paw.jpg" alt="">
+        
+    </header>
+    <main>
+        <div class="main__posicionMenuTitulo">
+            <div class="header_nav-versionesMobile">
+                <i class="fa-solid fa-bars header_nav-hamgurgerMenu"></i>
+            </div>
+            <div>
+                <h2 class="main__tituloPagina">Pet Paradise</h2>
+                <p class="main__texto-subtitulo">
+                    <strong>Comprá</strong> desde la comodidad tu casa. 
+                    <strong>Ahorrá</strong> tiempo y dinero. 
+                    <strong>Descubrí</strong> el más amplio stock de productos, las mejores ofertas y servicios. <p>
+            </div>
+        </div>
+        <hr class="main__bordeInferiorTextSubtitulo">
+        <!-- Navegacion lateral y cuerpo con imágenes principales total 4 -->
+        
+        <div class="main-principal">
+            <nav class="main-principal__nav">
+                nav setion
+            </nav>
+            <section class="main-section-articles">
+                <article class="main-article">
+                    <img src="/img/productos/criadores-150002.png" alt="">
+                    <h3>Titulo de marca</h3>
+                    <p>Detalle del producto</p>
+                    <div>
+                        botones para apretar
+                    </div>
+                </article>
+                <article class="main-article">
+                    <img src="/img/productos/oldPrince-148048.png" alt="">
+                    <h3>Titulo de marca</h3>
+                    <p>Detalle del producto</p>
+                    <div>
+                        botones para apretar
+                    </div>
+                </article>
+                <article class="main-article">
+                    <img src="/img/productos/royalCanin-156157.jpg" alt="">
+                    <h3>Titulo de marca</h3>
+                    <p>Detalle del producto</p>
+                    <div>
+                        botones para apretar
+                    </div>
+                </article>
+                <article class="main-article">
+                    <img src="/img/productos/vitalCanBalaced_121070.png" alt="">
+                    <h3>Titulo de marca</h3>
+                    <p>Detalle del producto</p>
+                    <div>
+                        botones para apretar
+                    </div>
+                </article>
+            </section>
+        </div>
+        
+    </main>
+    
+    
+</body>
+</html>
