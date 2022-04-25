@@ -17,6 +17,10 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/views/index.html"));
 });
 
+app.get("/product-review", (req, res) => {
+    res.sendFile(path.join(__dirname, "/views/product_view.html"));
+});
+
 // const express = require('express');
 // const path = require("path");
 

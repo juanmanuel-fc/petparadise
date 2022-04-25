@@ -1,1 +1,280 @@
-product view
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Paradise - Product review</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles-product.css">
+        
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Nunito+Sans:wght@200;300;400;700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/be2f25d2d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!--
+    Header con 4 divs:
+    1. superior: solo para efectos estéticos de color. visible en todos los viewports
+    2. main:  logo, barra búsqueda e ícono carrito compras. visible en todos los viewports. se adapta
+    el main a su vez tendrá una sección oculta (precio) que solo se ve en el viewport full
+    3. nav: links de navegación. solo visible en viewport tablet y full
+    4. inferior: para promos. visible en todos los viewports
+    -->
+    <header>
+        <div class="header__divSuperior">
+            
+        </div>
+        <!-- Div que tiene el logo, la barra de busqueda y el icono del carrito. el logo queda fijo, la barra se agranda y el icono de carrito también se queda fijo -->
+        <div class="header__main">
+            <!-- div para el logo -->
+            <div class="header__divLogo">
+                <a href="/" title="Ir a la página principal"><img class="header__main-logo" src="/img/logo2.png" alt="Logo Pet Paradise"></a>
+            </div>
+            <!-- div para la barra de busqueda que se expande al 100% -->
+            <div class="header__divBarraBusqueda">
+                <form class="header__barraBusqueda-form" action="">
+                    <input class="header__input-text" type="text">
+                </form>
+                <i class="fa-solid fa-magnifying-glass header__main-imgLupa"></i>
+            </div>
+            <!-- div para el icono del carrito de compras -->
+            <div class="header__divCarrito">
+                <i class="fa-solid fa-cart-shopping header__main-carrito"></i>
+            </div>
+            <!-- div para el precio, solo visto en el breakpoint full -->
+            <div class="header__main__div-precio">
+                <p>$4.427,55</p>
+            </div>
+        </div>
+        <nav>
+            <!-- Menu de navegación para resoluciones full -->
+            <div class="header__nav-fullScreen">
+                <!-- Cuerpo nav izquierdo -->
+                <div class="header__nav-texto-izq">
+                    <ul class="header__nav-texto-izq">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Perros</a></li>
+                        <li><a href="">Gatos</a></li>
+                        <li><a href="">Accesorios</a></li>
+                        <li><a href="">Servicios</a></li>
+                    </ul>
+                </div>
+                
+                <!-- cuerpo nav derecho -->
+                <div>
+                    <ul class="header__nav-texto-der">
+                        <li><a href="">Registro</a></li>
+                        <li><a href="">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Menu de navegación para resoluciones mobile y tablet -->
+        </nav>
+        <img class="header__imagen-patas" src="/img/paw.jpg" alt="">
+        
+    </header>
+    <main>
+        <div class="main__posicionMenuTitulo">
+            <div class="header_nav-versionesMobile">
+                <i class="fa-solid fa-bars header_nav-hamgurgerMenu"></i>
+            </div>
+            <div>
+                <h1 class="main__tituloPagina">Pet Paradise</h1>
+                <p class="main__texto-subtitulo">
+                    <em>
+                        Comprá desde la comodidad tu casa. Ahorrá tiempo y dinero. Descubrí el más amplio stock de productos, las mejores ofertas y servicios para tu mascota.</em>
+                <p>
+            </div>
+        </div>
+        <hr class="main__bordeInferiorTextSubtitulo">
+        <!-- Navegacion lateral y cuerpo con imágenes principales total 4 -->
+        
+        <div class="main-principal">
+            
+            <nav class="main-principal__nav">
+                <h3>Perros</h3>
+                <ul>
+                    <li> <a href="">Alimentos secos </a>  </li>
+                    <li> <a href="">Alimentos humedos</a>  </li>
+                    <li>  <a href="">Alimentos especiales</a></li>
+                </ul>
+                <h3>Gatos</h3>
+                <ul>
+                    <li> <a href="">Alimentos secos</a> </li>
+                    <li> <a href="">Alimentos humedos</a> </li>
+                    <li> <a href="">Alimentos especiales</a> </li>
+                </ul>
+                <h3>Accesorios</h3>
+                <ul>
+                    <li> <a href="">Camas y mantas</a> </li>
+                    <li> <a href="">Comederos y bebederos</a> </li>
+                    <li> <a href="">Elementos de paseo</a> </li>
+                    <li> <a href="">Juguetes</a> </li>
+                </ul>
+                <h3>Servicios</h3>
+                <ul>
+                    <li> <a href="">Paseadores de perros</a> </li>
+                    <li> <a href="">Veterinarias asociadas</a> </li>
+                    <li> <a href="">Higiene de mascotas</a> </li>
+                </ul>
+            </nav>
+            
+            <!-- EDIT FROM HERE ON -->
+
+            <!-- contenedor principal para las dos grandes columnas -->
+            <div class="main-general">
+
+                <div class="main-izquierda">
+
+                    <!-- la cabecera de la columna izquierda -->
+                    <div class="main-izquierda__textos">
+                        <h3 class="main-izquierda__h3">Criadores</h3>
+                        <p class="main-izquieda__p"> Carne y pollo para perros adultos.</p>
+                    </div>
+                    <!-- la imagen -->
+                    <div class="main-izquierda__img">
+                        <img src="/img/productos/criadores-150002.png" alt="">
+                    </div>
+                    <!-- precio -->
+                    <div class="main-izquierda__precio">
+                        <h3>$4555</h3>
+                    </div>
+                    <!-- los botones de compra -->
+                    <div class="main-izquierda__botones">
+                        <label for="cantidad">Cantidad: </label>
+                            <select name="cantidad" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select> 
+                            <button class="main-izquierda__submit" type="submit">Agregar al carrito</button>
+                    </div>
+                    
+                </div>
+                
+                <!-- columna derecha que está encolumnada en los dos primeros viewports 
+                y que luego se despliega a la derecha de la columna izquierda en el
+                vieport más grande  -->
+                <div class="main-izquierda__textos-derecha">
+                    <div class="main-izquierda__textos-derecha">
+                        <h3>Descripción</h3>
+                        <p>El Alimento Maintenance Criadores Adulto está desarrollado especialmente para perros adultos de todos los tamaños, de entre 1 y 7 años de edad. Su fórmula incluye proteínas de carne y pollo de alto valor biológico, fibras, minerales, vitaminas y ácidos grasos, resultando en una nutrición completa para tu mascota.</p>
+                        <h3>Información Nutricional</h3>
+                        <p class="main-izquierda__textoNegriga">Trigo, maíz, germen de maíz, harinas de soja, harina de carne y hueso, sorgo, aceite de pollo, zeolita, sal, hidrolizado proteico de pollo, dipropinato de calcio, BHT; BHA, núcleo vitamínico-mineral: vitaminas A, D3, E, K, B1, B6, B12, ácido fólico, ácido nicotínico, ácido pantoténico, biotina, colina, minerales, zinc, hierro, cobre, yodo, magneso, selenio.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- STARTING OVER 
+            
+            <section class="main-section">
+
+                <div class="main-cabecera">
+                    
+                    <div>
+                        <h3 class="main-cabecera__titulo">Criadores</h3>
+                        <p class="main-cabecera__subtitulo"> Carne y pollo para perros adultos.</p>
+                    </div>
+                    <div>
+                        <img class="main-cabecera__img" src="/img/productos/criadores-150002.png" alt="">
+                    </div>
+                    <div>
+                        <p class="main-cabecera__precio">$4555</p>
+                    </div>
+                                            
+                    
+                    
+                    
+
+                    
+
+                    <article class="main-review__textos-form">
+                        
+                        <div class="main-review__agregar">
+                            <label for="cantidad"><span class="main-review__texto-cant" >Cantidad:</span></label>
+                            <select name="cantidad" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="main-review__boton" type="submit">Agregar al carrito</button>
+                        </div>
+                    </article>
+
+
+                    
+                </div>
+
+                <div class="main-review__elementos-descriptivos">
+                   <h2>Info del producto</h2>
+                   <p>Más info del producto</p>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat hic ipsa et molestiae, necessitatibus nulla. Magnam, placeat quibusdam. Inventore ipsum repellendus deserunt quo illum quibusdam velit doloremque veritatis voluptatem eligendi?</p>
+                </div>    
+       
+            </section>
+
+            -->
+
+        </div>
+        
+    </main>
+    <footer>
+       
+        <section class="footer-principal">
+            
+            <article>
+                <h3>Contacto. <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram-square"></i> <i class="fa-brands fa-whatsapp"></i></h3>
+                <p> <a href="">Teléfono</a> </p> 
+                <p> <a href=""> Facebook</a></p>
+                <p> <a href=""> Instagram</a></p>
+                <p> <a href=""> Whatsapp</a></p>
+                <p> <a href="">info@petparadise.com</a> </p>
+            </article>
+
+            <article>
+                <h3>Otros servicios <i class="fa-solid fa-bell-concierge"></i></h3>
+                <p> <a href="">Adopciones</a> </p>
+                <p> <a href="">Microchips</a> </p>
+                <p> <a href="">Refugio de animales y su patrocinio</a> </p>
+            </article>
+                
+            <article>
+                <h3>Legales. <i class="fa-solid fa-scale-balanced"></i></h3>
+                <p> <a href="">Términos y condiciones</a> </p> 
+                <p> <a href="">Cancelar una compra</a> </p>
+                <p> <a href="">Defensa del Consumidor</a> </p>
+            </article>
+            
+        
+        </section>
+        
+        
+        <section class="footer-ultimoParrafo">
+            <p>Copyright © 2022 Pet Paradise S.R.L. <br>
+                Monroe 860 (1428) CABA, Argentina. <br>
+                Carrera 53 100 25, Bogota, Bogota, Colombia.
+            </p>
+        </section>
+        
+
+    </footer>
+    
+    
+</body>
+</html>

@@ -1,0 +1,239 @@
+/* CSS DE LA PRODUCT-REVIEW PAGE
+En esta hoja de estilo se incorporan UNICAMENTE los 
+estilos UNICOS de la página product_view.html */
+
+
+/* div general .main-general para
+las dos grandes columnas
+1. la izquierda con la foto, info y
+formulario 
+2. La parte derecha con la info ampliada
+En los dos primeros viewports se ve 
+todo el columna, en el viewport mas grande
+se ve uan al lado de la otra */
+
+.main-general {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* columna izquieda: encolumnada en los dos 
+primeros viewports, a lado de la otra en 
+el viewport más grande */
+
+.main-izquierda {
+    display: flex;
+    flex-direction: column;
+}
+
+/* los textos de la columna izquieda: 
+titulo del producto y subtitulo con gris
+clarito, alineados a la izquireda */
+.main-izquierda__textos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* div para la imagen centrada */
+.main-izquierda__img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* div para el precio y los botones de 
+compra */
+.main-izquierda__precio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 0px 0px 58px;
+}
+
+/* div para los botones de compra */
+.main-izquierda__botones {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 0px 0px 58px;
+    align-items: baseline;
+}
+
+.main-izquierda__textos-derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 0px 0px 10px;
+}
+
+
+/* OTROS ITEMS QUE NO SEAN DIVS */
+.main-izquierda__h3 {
+    padding: 8px 0px 0px 58px;
+}
+
+.main-izquieda__p {
+    padding: 5px 0px 0px 58px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+}
+
+.main-izquierda__botones > select {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+}
+
+.main-izquierda__submit {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    background: #fccc07;
+    border: 5px solid #fccc07;
+    margin-left: 3px;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.main-izquierda__textos-derecha h3 {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.main-izquierda__textos-derecha p {
+    padding-right: 25px;
+}
+
+.main-izquierda__textoNegriga {
+    font-size: 12px;
+    font-weight: 300;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+
+@media (min-width: 760px) {
+    .main-izquierda__textos-derecha h3 {
+        padding-right: 25%;
+    }
+    
+    .main-izquierda__textos-derecha p {
+        padding-right: 25%;
+    }
+    
+    .main-izquierda__textoNegriga {
+        padding-right: 20%;
+    }
+}
+
+
+
+/* STARTING OVER */
+
+.main-section {
+    display: flex;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.main-cabecera {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-cabecera__titulo {
+    font-size: 22px;
+    text-align: left;
+    padding: 5px 0px 2px 0px;
+    color: #000;
+}
+
+.main-cabecera__subtitulo {
+    font-size: 14px;
+    font-weight: 333;
+    text-align: left;
+    padding: 0px 0px 5px 0px;
+    color: #333;
+}
+
+.main-cabecera__precio {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 5px 0px 2px 0px;
+    color: #000;
+}
+
+.main-review__elementos-descriptivos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* .main-cabecera__contenedor-foto {
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+} */
+
+.main-cabecera__img {
+    max-width: 200px;
+}
+
+.main-review__precio {
+
+}
+
+
+
+.main-review__agregar {
+    margin-right: 7px;
+}
+
+.main-review__textos-form {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px 0px 0px;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-review__texto-cant {
+    font-size: 16px;
+}
+
+.main-review__agregar > select {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+}
+
+.main-review__boton {  
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    background: #fccc07;
+    border: 5px solid #fccc07;
+    margin-left: 3px;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+
+}

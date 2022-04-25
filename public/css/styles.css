@@ -200,10 +200,9 @@ a:hover {
 /* Estilos del main */
 
 .main__tituloPagina {
-    /* font-family: 'Neucha', cursive; */
     padding-top: 8px;
     padding-left: 20px;
-    font-size: 27px;
+    font-size: 26px;
     font-weight: bold;
     color: #000;
 }
@@ -236,7 +235,8 @@ a:hover {
 
 .main-principal__nav {
     display: none;
-    width: 25%;
+    width: 175px;
+    /* width: 25%; */
     padding-left: 7px;
 }
 
@@ -280,8 +280,8 @@ a:hover {
 }
 
 .main-article:hover {
-    box-shadow: 0px 0px 8px #d09c00;
-    cursor: pointer;
+    box-shadow: 0px 0px 8px #555;
+    /* cursor: pointer; */
 }
 
 .main-article__textos {
@@ -291,16 +291,43 @@ a:hover {
     padding: 10px;
 }
 
-.main-article > div > h3 {
-    font-size: 16px;
-    color: #333;
+.main-article__nombre-precio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.main-article__nombre-precio > h3 {
+    font-size: 20px;
+    color: #000;
     font-weight: 700;
     margin-bottom: 5px;
 }
 
-.main-article > div > p {
-    font-size: 14px;
+.main-article__nombre-precio > p {
+    font-size: 16px;
+    font-weight: 700;
     color: #000;
+    margin-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: #fccc07;
+    border: 3px solid #fccc07;
+    border-radius: 5px;
+}
+
+.main-article > div > p {
+    font-size: 16px;
+    color: #000;
+}
+
+.main-article > div > .main-article__texto-detalle {
+    font-size: 12px;
+    font-weight: 300;
+    color: #555;
+    padding-top: 5px;
 }
 
 .main-article > img {
@@ -323,7 +350,9 @@ a:hover {
     display: flex;
     width: 100%;
     flex-direction: column;
-    background-color: #ebebeb;
+    background-color: #fccc07;
+    /* background-color: #ebebeb; */
+    margin-top: 25px;
     padding-top: 5px;
     padding-bottom: 12px;
     border-top: 1px solid #D3D3D3;
@@ -396,8 +425,9 @@ a:hover {
 
     .main-principal__nav {
         display: flex;
-        width: 25%;
         flex-direction: column;
+        width: 175px;
+        
     }
 
     .main-section-articles {
@@ -447,6 +477,13 @@ a:hover {
         display: none;
     }
 
+    .main-principal__nav {
+        display: flex;
+        flex-direction: column;
+        width: 175px;
+        
+    }
+
     .main__tituloPagina {
         padding-top: 18px;
     }
@@ -455,11 +492,7 @@ a:hover {
         font-size: 13px;
         padding-right: 25%;
     }
-
-    .main-principal__nav {
-        display: flex;
-        width: 25%;
-    }
+    
 
     .main-section-articles {
         display: flex;
