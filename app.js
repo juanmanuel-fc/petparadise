@@ -7,8 +7,8 @@ const publicPath = path.resolve(__dirname, "./public");
 
 app.use(express.static(publicPath));
 
-app.listen(puertoExpress, () => {
-    console.log("Express corriendo OK en el puerto", puertoExpress);
+app.listen(process.env.PORT || puertoExpress, () => {
+    console.log("Express corriendo OK");
 })
 
 
