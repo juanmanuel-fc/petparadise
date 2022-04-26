@@ -1,0 +1,111 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.main-encabezado {
+    margin-top: 26px;
+    max-width: 470px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid #ebebeb;
+    padding: 5px 5px 10px 5px;
+    border-radius: 5px;
+    background-color: #ebebeb;
+}
+
+.main-encabezado > h1 {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.main-encabezado > i {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.main-subEncabezado {
+    display: flex;
+    justify-content: ;
+}
+
+.main-subEncabezado > p {
+    font-size: 13px;
+    color: #555;
+    max-width: 470px;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+}
+
+.main-formulario-borde {
+    border: 1px solid #EBEBEB;
+    width: 95%;
+    max-width: 470px;
+    margin-top: 10px;
+    padding: 5px 5px 5px 5px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 7px;
+
+}
+
+.form-group__ancho-label {
+    width: 50%;
+    padding-left: 5px;
+}
+
+.form-group__inputField {
+    width: 50%;
+}
+
+.form-group__ancho-input {
+    width: 100%;
+    padding-left: 5px;
+    border-radius: 6px;
+    border: 2px solid #999;
+    line-height: 24px;   
+}
+
+.form-group__ancho-input[type=text]:focus {
+    background-color: #ebebeb;
+}
+
+.form-group__ancho-input[type=email]:focus {
+    background-color: #ebebeb;
+}
+
+.boton-submit {
+    width: 49%;
+    color: #000;
+    background: #fccc07;
+    border: 5px solid #fccc07;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 24px;   
+}
+
+.main-terminos > p {
+    font-size: 11px;
+    color: #555;
+    max-width: 470px;
+    padding: 5px 5px 10px 5px;
+}
+
+.main-terminos > h2 {
+    font-size: 13px;
+    color: #444;
+    max-width: 470px;
+    padding: 5px 5px 10px 5px;
+}

@@ -1,1 +1,196 @@
-register
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Paradise - Registro</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles-product.css">
+    <link rel="stylesheet" href="/css/carrito.css">
+    <link rel="stylesheet" href="/css/register.css">
+        
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Nunito+Sans:wght@200;300;400;700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/be2f25d2d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!--
+    Header con 4 divs:
+    1. superior: solo para efectos estéticos de color. visible en todos los viewports
+    2. main:  logo, barra búsqueda e ícono carrito compras. visible en todos los viewports. se adapta
+    el main a su vez tendrá una sección oculta (precio) que solo se ve en el viewport full
+    3. nav: links de navegación. solo visible en viewport tablet y full
+    4. inferior: para promos. visible en todos los viewports
+    -->
+    <header>
+        <div class="header__divSuperior">
+            
+        </div>
+        <!-- Div que tiene el logo, la barra de busqueda y el icono del carrito. el logo queda fijo, la barra se agranda y el icono de carrito también se queda fijo -->
+        <div class="header__main">
+            <!-- div para el logo -->
+            <div class="header__divLogo">
+                <a href="/" title="Ir a la página principal"><img class="header__main-logo" src="/img/logo2.png" alt="Logo Pet Paradise"></a>
+            </div>
+            
+        </div>
+        
+        <img class="header__imagen-patas" src="/img/paw.jpg" alt="">
+        
+    </header>
+    
+  
+    <main>
+        
+
+        <div class="main-encabezado">
+            <h1>Registro de usuario </h1> <div><i class="fa-solid fa-user"></i></div> 
+        </div>
+        <div class="main-subEncabezado">
+            <p>Ingrese toda la información requedia</p>
+        </div>
+    
+        <section class="main-formulario-borde">
+            <form action="/" method="POST">
+                
+                <div class="form-group">
+                    <div class="form-group__ancho-label">
+                        <label for="nombre">Ingrese su nombre</label>
+                    </div> 
+                    <div class="form-group__inputField">
+                        <input class="form-group__ancho-input" type="text" name="nombre" id="" placeholder="Ernesto Perez">        
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="form-group__ancho-label">
+                        <label for="usuario">Elija un usuario</label>
+                    </div>
+                    <div class="form-group__inputField">
+                        <input class="form-group__ancho-input" type="text" name="usuario" id="" placeholder="El Frailejon">        
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="form-group__ancho-label">
+                        <label for="usuario">Ingrese su e-mail</label>
+                    </div>
+                    <div class="form-group__inputField">
+                        <input class="form-group__ancho-input" type="email" name="usuario" id="" placeholder="@elfrailejon.com">        
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="form-group__ancho-label">
+                        <label for="nacimiento">Ingrese su fecha de nacimiento</label>
+                    </div>
+                    <div class="form-group__inputField">
+                        <input class="form-group__ancho-input" type="date" name="nacimiento" id="">        
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="form-group__ancho-label">
+                        <label for="password">Elija una contraseña</label>
+                    </div>
+                    <div class="form-group__inputField">
+                        <input class="form-group__ancho-input" type="password" name="password" id="">        
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="form-group__ancho-label">
+                        <label for="terminos">Acepto los términos y condiciones</label>
+                    </div>
+                    <div class="form-group__inputField">
+                        <input class="form-group__ancho-input" type="checkbox" name="terminos" id="">        
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="form-group__ancho-label">
+                        <label for=""></label>
+                    </div>
+                    <div class="form-group__inputField">
+                        <button class="boton-submit" type="submit">Registrar</button> 
+                        <button class="boton-submit" type="reset">Borrar</button>
+
+                    </div>
+                </div>
+            </form>
+            <div class="main-terminos">
+                <h2>Términos y condiciones</h2>
+                <p>Los siguientes términos son parte de un acuerdo entre usted e Pet Paradise. Al acceder o usar este sitio, usted reconoce que ha leído, entendido y acepta las disposiciones de estos términos y el cumplimiento de todas las leyes y reglamentaciones aplicables, incluso las leyes y reglamentaciones sobre el control de exportación y reexportación. Si usted no está de acuerdo con estos términos, no utilice este sitio.
+                </p>
+                <p>
+                    Pet Paradise puede, sin previo aviso, en cualquier momento, modificar las presentes condiciones de uso y cualquier otra información contenida en este sitio. Pet Paradise también puede efectuar mejoras o cambios a los productos, servicios o programas descritos en este sitio en cualquier momento sin previo aviso.
+                </p>
+                <p>Este sitio contiene avisos de propiedad e información de derechos de autor, cuyos términos deben observarse y seguirse. Consulte la pestaña con el título “Información sobre derechos de autor y marcas registradas” para obtener información relacionada.</p>
+                <p>
+                    Pet Paradise le concede un permiso limitado, no exclusivo, intransferible para acceder y exhibir las páginas Web en este sitio como un cliente o cliente potencial de Pet Paradise siempre y cuando cumpla con estos Términos de Uso, y todos los derechos de autor, marcas registradas y otros avisos de propiedad permanecen intactos. Usted sólo puede utilizar un rastreador para rastrear este sitio, según lo permitido por el protocolo robots.txt de este sitio, e Pet Paradise puede bloquear cualquiera de los rastreadores a su entera discreción. El uso autorizado en virtud de este acuerdo no es de naturaleza comercial (por ej.: usted no puede vender el contenido al que acceda en o a través de este sitio). Queda prohibido cualquier otro uso de este sitio. 
+                </p>
+                <p>
+                    Excepto para el permiso limitado estipulado en el párrafo anterior, Pet Paradise no le concede ningún derecho o licencia explícita o implícita bajo ninguna patente, marca registrada, derecho de autor, u otros derechos de propiedad o propiedad intelectual. Usted no puede duplicar ninguna parte del contenido de este sitio en otro sitio Web o en cualquier otro medio. Cualquier software y otros materiales que se encuentren disponibles para su descarga, acceso u otra utilización de este sitio con sus propios términos de licencia se regirán por tales términos, condiciones y avisos. El incumplimiento de tales términos o cualquiera de los términos en este sitio resultará en la terminación automática de cualquier derecho que se le haya otorgado, sin previo aviso, y usted deberá destruir inmediatamente todas las copias del material descargado en su posesión, custodia o control.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        
+        
+        
+    </main>
+
+
+    <footer>
+       
+        <section class="footer-principal">
+            
+            <article>
+                <h3>Contacto. <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram-square"></i> <i class="fa-brands fa-whatsapp-square"></i></i></h3>
+                <p> <a href="">Teléfono</a> </p> 
+                <p> <a href=""> Facebook</a></p>
+                <p> <a href=""> Instagram</a></p>
+                <p> <a href=""> Whatsapp</a></p>
+                <p> <a href="">info@petparadise.com</a> </p>
+            </article>
+
+            <article>
+                <h3>Otros servicios <i class="fa-solid fa-bell-concierge"></i></h3>
+                <p> <a href="">Adopciones</a> </p>
+                <p> <a href="">Microchips</a> </p>
+                <p> <a href="">Refugio de animales y su patrocinio</a> </p>
+            </article>
+                
+            <article>
+                <h3>Legales. <i class="fa-solid fa-scale-balanced"></i></h3>
+                <p> <a href="">Términos y condiciones</a> </p> 
+                <p> <a href="">Cancelar una compra</a> </p>
+                <p> <a href="">Defensa del Consumidor</a> </p>
+            </article>
+            
+        
+        </section>
+        
+        
+        <section class="footer-ultimoParrafo">
+            <p>Copyright © 2022 Pet Paradise S.R.L. <br>
+                Monroe 860 (1428) CABA, Argentina. <br>
+                Carrera 53 100 25, Bogota, Bogota, Colombia.
+            </p>
+        </section>
+        
+
+    </footer>
+    
+    
+</body>
+</html>
