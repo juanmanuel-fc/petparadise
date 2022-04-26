@@ -318,6 +318,33 @@ a:hover {
     border-radius: 5px;
 }
 
+
+.main-article__nombre-precio > a > p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: #fccc07;
+    border: 3px solid #fccc07;
+    border-radius: 5px;
+}
+
+.main-article__nombre-precio > p:hover {
+    box-shadow: 0px 0px 8px #555;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
 .main-article > div > p {
     font-size: 16px;
     color: #000;

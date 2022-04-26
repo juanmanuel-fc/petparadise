@@ -21,6 +21,10 @@ app.get("/product-review", (req, res) => {
     res.sendFile(path.join(__dirname, "/views/product_view.html"));
 });
 
+app.get("/carrito", (req, res) => {
+    res.sendFile(path.join(__dirname, "/views/carrito.html"));
+});
+
 // const express = require('express');
 // const path = require("path");
 

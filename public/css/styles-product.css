@@ -134,7 +134,7 @@ compra */
 
 
 /* STARTING OVER */
-
+/* 
 .main-section {
     display: flex;
     width: 100%;
@@ -178,7 +178,7 @@ compra */
     width: 100%;
     display: flex;
     justify-content: center;
-}
+} */
 
 
 
@@ -189,7 +189,7 @@ compra */
     align-items: center;
     justify-content: space-evenly;
 } */
-
+/* 
 .main-cabecera__img {
     max-width: 200px;
 }
@@ -236,4 +236,4 @@ compra */
     padding: 3px;
     cursor: pointer;
 
-}
+} */
