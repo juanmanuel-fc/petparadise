@@ -4,9 +4,9 @@ Trabajo integrador grupal. Full Stack Node A Distancia TN09.Año 2022
 
 ### Fortalezas
 
--Predisposición grupal en cuanto a las tareas asignadas.
--Muy buena comunicación.
--Disposición de apoyo al compañero tanto laboral como humano.
+- Predisposición grupal en cuanto a las tareas asignadas.
+- Muy buena comunicación.
+- Disposición de apoyo al compañero tanto laboral como humano.
 
 
 ### Debilidades
