@@ -11,17 +11,17 @@ Trabajo integrador grupal. Full Stack Node A Distancia TN09.Año 2022
 
 ### Debilidades
 
--Distribución de tiempos.
--Finalizar asignaturas pendientes.
--Organización de tareas en base a un criterio.
+- Distribución de tiempos.
+- Finalizar asignaturas pendientes.
+- Organización de tareas en base a un criterio.
 
 ### Aspectos a mejorar
 
--Coordinación y asignación de tareas.
--Cumplimiento de reuniones pactadas.
--Definición de jerarquías consignadas.
+- Coordinación y asignación de tareas.
+- Cumplimiento de reuniones pactadas.
+- Definición de jerarquías consignadas.
 
 ### Continuar haciendo
 
--Incapié en la comunicación establecida.
--Capacidad de sostén al colega.
+- Incapié en la comunicación establecida.
+- Capacidad de sostén al colega.
