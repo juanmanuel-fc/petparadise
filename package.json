@@ -1,7 +1,7 @@
 {
   "name": "modulo4_mercado-liebre-proyecto-integrador_v2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Trabajo integrador grupal.\r Full Stack Node A Distancia TN09\r Año 2022",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,6 +11,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3"
-  }
+    "ejs": "^3.1.7",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanmanuel-fc/petparadise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juanmanuel-fc/petparadise/issues"
+  },
+  "homepage": "https://github.com/juanmanuel-fc/petparadise#readme"
 }
