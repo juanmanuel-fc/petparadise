@@ -12,6 +12,9 @@ app.use(express.static(publicPath));
 
 //requerimientos de routes
 const mainRouter = require("./routes/main");
+const usersRouter = require("./routes/users");
+const productsRouter = require("./routes/products");
+
 
 
 
@@ -21,20 +24,32 @@ app.listen(process.env.PORT || puertoExpress, () => {
 
 
 //rutas de los archivos actualizados
+//main
 app.use("/",mainRouter);
+app.use("/carrito", mainRouter);
+
+//users
+app.use("/", usersRouter);
+app.use("/register", usersRouter);
+
+//products
+app.use("/",productsRouter);
+
+ 
 
 // // RUTAS DE LOS ARCHIVOS
 // app.get("/", (req, res) => {
 //     res.sendFile(path.join(__dirname, "/src/views/main/index.html"));
 // });
 
+// app.get("/carrito", (req, res) => {
+//     res.sendFile(path.join(__dirname, "/src/views/main/carrito.html"));
+// });
+
 // app.get("/product-review", (req, res) => {
 //     res.sendFile(path.join(__dirname, "/src/views/products/product_view.html"));
 // });
 
-// app.get("/carrito", (req, res) => {
-//     res.sendFile(path.join(__dirname, "/src/views/main/carrito.html"));
-// });
 
 // app.get("/login", (req, res) => {
 //     res.sendFile(path.join(__dirname, "/src/views/users/login.html"));
