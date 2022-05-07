@@ -94,94 +94,73 @@
         <section class="abm-main-formulario-borde">
             <form action="/" method="POST">
                 
+                <!-- Nombre del producto -->
                 <div class="form-group">
                     <div class="abm-form-group__ancho-label">
                         <label for="nombreProducto">Nombre del producto</label>
                     </div> 
-                    <div class="abm-form-group__inputField {
-">
+                    <div class="abm-form-group__inputField">
                         <input class="form-group__ancho-input" type="text" name="nombreProducto" id="" placeholder="ej. Alimento mix balanceado">        
                     </div>
                 </div>
                 
+                <!-- Marca de producto -->
                 <div class="form-group">
                     <div class="abm-form-group__ancho-label">
                         <label for="marcaProducto">Marca</label>
                     </div>
-                    <div class="abm-form-group__inputField {
-">
+                    <div class="abm-form-group__inputField">
                         <input class="form-group__ancho-input" type="text" name="marcaProducto" id="" placeholder="ej. Royal Canin">        
                     </div>
                 </div>
                 
+                <!-- Descripción del producto -->
                 <div class="form-group">
                     <div class="abm-form-group__ancho-label">
                         <label for="detalleProducto">Descripción</label>
                     </div>
-                    <div class="abm-form-group__inputField {
-">
+                    <div class="abm-form-group__inputField">
                         <textarea class="abmAlta__text-area" name="detalleProducto" id="" cols="30" rows="10" placeholder="ej. El alimento mix balanceado... "></textarea>
                     </div>
                 </div>
                 
+                <!-- Información nutricional -->
                 <div class="form-group">
                     <div class="abm-form-group__ancho-label">
-                        <label for="infoNutriProducto">Descripción</label>
+                        <label for="infoNutriProducto">Información nutricional</label>
                     </div>
-                    <div class="abm-form-group__inputField {
-">
+                    <div class="abm-form-group__inputField">
                         <textarea class="abmAlta__text-area" name="infoNutriProducto" id="" cols="30" rows="10" placeholder="ej. Trigo, maíz, germen de maíz, harinas de soja, ... "></textarea>
                     </div>
                 </div>
-
-
+                
+                <!-- Imagen del producto -->
                 <div class="form-group">
                     <div class="abm-form-group__ancho-label">
-                        <label for="usuario">Ingrese su e-mail</label>
+                        <label for="imagenProducto">Imagen: .jpp o .png</label>
                     </div>
-                    <div class="abm-form-group__inputField {
-">
-                        <input class="form-group__ancho-input" type="email" name="usuario" id="" placeholder="@elfrailejon.com">        
+                    <div class="abm-form-group__inputField">
+                        <input type="file"   name="imagenProducto" accept=".jpg, .png" >        
                     </div>
                 </div>
                 
+                <!-- Precio -->
                 <div class="form-group">
                     <div class="abm-form-group__ancho-label">
-                        <label for="nacimiento">Ingrese su fecha de nacimiento</label>
+                        <label for="precioProducto">Precio</label>
                     </div>
-                    <div class="abm-form-group__inputField {
-">
-                        <input class="form-group__ancho-input" type="date" name="nacimiento" id="">        
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <div class="abm-form-group__ancho-label">
-                        <label for="password">Elija una contraseña</label>
-                    </div>
-                    <div class="abm-form-group__inputField {
-">
-                        <input class="form-group__ancho-input" type="password" name="password" id="">        
+                    <div class="abm-form-group__inputField">
+                        <input class="form-group__ancho-input-corto" type="text" name="precioProducto" id="" placeholder="ej. 5300">        
                     </div>
                 </div>
-                
-                <div class="form-group">
-                    <div class="abm-form-group__ancho-label">
-                        <label for="terminos">Acepto los términos y condiciones</label>
-                    </div>
-                    <div class="abm-form-group__inputField {
-">
-                        <input class="form-group__ancho-input" type="checkbox" name="terminos" id="">        
-                    </div>
-                </div>
+              
                 
                 <div class="form-group">
                     <div class="abm-form-group__ancho-label">
                         <label for=""></label>
                     </div>
-                    <div class="abm-form-group__inputField {
-">
-                        <button class="boton-submit" type="submit">Registrar</button> 
+                    <div class="abm-form-group__inputField">
+                        <button class="boton-submit" type="submit">Dar de alta</button> 
                         <button class="boton-submit" type="reset">Borrar</button>
 
                     </div>
