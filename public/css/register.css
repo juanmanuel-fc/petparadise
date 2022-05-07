@@ -32,7 +32,6 @@ main {
 
 .main-subEncabezado {
     display: flex;
-    justify-content: ;
 }
 
 .main-subEncabezado > p {
@@ -108,4 +107,63 @@ main {
     color: #444;
     max-width: 470px;
     padding: 5px 5px 10px 5px;
+}
+
+
+/* A partir de aquí todos los estilos son del módulo de ABM */
+
+.abmAlta__text-area {
+    width: 100%;
+    padding-left: 5px;
+    border-radius: 6px;
+    border: 2px solid #999;
+    height: 250px;
+    font-size: 15px;
+}
+
+.abm-main-encabezado {
+    margin-top: 26px;
+    max-width: 670px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid #ebebeb;
+    padding: 5px 5px 10px 5px;
+    border-radius: 5px;
+    background-color: #ebebeb;
+}
+
+.abm-main-encabezado > h1 {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.abm-main-encabezado > i {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.abm-main-subEncabezado {
+    display: flex;
+}
+
+.abm-main-formulario-borde {
+    border: 1px solid #EBEBEB;
+    width: 95%;
+    max-width: 670px;
+    margin-top: 10px;
+    padding: 5px 5px 5px 5px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.abm-form-group__ancho-label {
+    width: 30%;
+    padding-left: 5px;
+}
+
+.abm-form-group__inputField {
+    width: 70%;
 }

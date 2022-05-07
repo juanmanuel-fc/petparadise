@@ -1,0 +1,65 @@
+.abmMain__subtitulo {
+    font-size: 16px;
+    padding-left: 20px;
+    color: #000;
+}
+
+.abmMain-principal__nav {
+    /* display: none; */
+    width: 175px;
+    /* width: 25%; */
+    padding-left: 7px;
+}
+
+.abmMain-principal__nav > h3 {
+    font-size: 20px;
+    padding-top: 16px;
+    padding-left: 10px;
+    color: #333
+}
+
+.abmMain-principal__nav > p {
+    font-size: 14px;
+    padding-top: 16px;
+    padding-left: 10px;
+    color: #000
+}
+
+.abmMain-section-articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.abmInput {
+    margin-top: 20px;
+    margin-left: 17px;
+    width: 350px;
+    height: 29px;
+    padding-left: 10px;
+    border-radius: 2px;
+}
+
+.abmTextArea {
+    margin-top: 20px;
+    margin-left: 17px;
+    width: 350px;
+    height: 200px;
+    padding-left: 10px;
+    border-radius: 2px;
+    font-size: 14px;
+    padding-top: 3px;
+}
+
+.abmTextoSueltoFormulario {
+    font-size: 14px;
+    padding-left: 16px;
+}
+
+.abmFormGroup {
+    width: 100%;
+}
