@@ -37,7 +37,7 @@ app.use("/",productsRouter);
 
  
 
-// // RUTAS DE LOS ARCHIVOS
+// // RUTAS DE LOS ARCHIVOS ANTIGUOS
 // app.get("/", (req, res) => {
 //     res.sendFile(path.join(__dirname, "/src/views/main/index.html"));
 // });

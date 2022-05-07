@@ -28,22 +28,10 @@
     3. nav: links de navegación. solo visible en viewport tablet y full
     4. inferior: para promos. visible en todos los viewports
     -->
-    <header>
-        <div class="header__divSuperior">
-            
-        </div>
-        <!-- Div que tiene el logo, la barra de busqueda y el icono del carrito. el logo queda fijo, la barra se agranda y el icono de carrito también se queda fijo -->
-        <div class="header__main">
-            <!-- div para el logo -->
-            <div class="header__divLogo">
-                <a href="/" title="Ir a la página principal"><img class="header__main-logo" src="/img/logo2.png" alt="Logo Pet Paradise"></a>
-            </div>
-            
-        </div>
-        
-        <img class="header__imagen-patas" src="/img/paw.jpg" alt="">
-        
-    </header>
+    
+  <!-- aqui va el header desde el partial -->
+  <%- include("../partials/header")  %> 
+    
     
   
     <main>
@@ -109,54 +97,12 @@
             </div>
 
         </section>
-
-
-        
-        
         
     </main>
 
 
-    <footer>
-       
-        <section class="footer-principal">
-            
-            <article>
-                <h3>Contacto. <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram-square"></i> <i class="fa-brands fa-whatsapp-square"></i></i></h3>
-                <p> <a href="">Teléfono</a> </p> 
-                <p> <a href=""> Facebook</a></p>
-                <p> <a href=""> Instagram</a></p>
-                <p> <a href=""> Whatsapp</a></p>
-                <p> <a href="">info@petparadise.com</a> </p>
-            </article>
-
-            <article>
-                <h3>Otros servicios <i class="fa-solid fa-bell-concierge"></i></h3>
-                <p> <a href="">Adopciones</a> </p>
-                <p> <a href="">Microchips</a> </p>
-                <p> <a href="">Refugio de animales y su patrocinio</a> </p>
-            </article>
-                
-            <article>
-                <h3>Legales. <i class="fa-solid fa-scale-balanced"></i></h3>
-                <p> <a href="">Términos y condiciones</a> </p> 
-                <p> <a href="">Cancelar una compra</a> </p>
-                <p> <a href="">Defensa del Consumidor</a> </p>
-            </article>
-            
-        
-        </section>
-        
-        
-        <section class="footer-ultimoParrafo">
-            <p>Copyright © 2022 Pet Paradise S.R.L. <br>
-                Monroe 860 (1428) CABA, Argentina. <br>
-                Carrera 53 100 25, Bogota, Bogota, Colombia.
-            </p>
-        </section>
-        
-
-    </footer>
+   <!-- insertar el footer con partials ejs -->
+   <%- include("../partials/footer")  %> 
     
     
 </body>
