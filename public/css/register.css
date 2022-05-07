@@ -42,6 +42,17 @@ main {
     text-align: center;
 }
 
+.main-subEncabezado > h4 {
+    font-size: 15px;
+    color: #cc0000;
+    max-width: 470px;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
 .main-formulario-borde {
     border: 1px solid #EBEBEB;
     width: 95%;
@@ -101,6 +112,18 @@ main {
     border-radius: 6px;
     cursor: pointer;
     line-height: 24px;   
+}
+
+.boton-delete {
+    width: 49%;
+    color: #000;
+    background: #d00;
+    border: 5px solid #d00;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 24px;
+    margin-top: 15px;   
 }
 
 .main-terminos > p {
@@ -174,4 +197,14 @@ main {
 
 .abm-form-group__inputField {
     width: 70%;
+}
+
+.abm-main__texto-advertencia {
+    color: #cc0000;
+}
+
+.abm-main__texto-baja {
+    padding-left: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

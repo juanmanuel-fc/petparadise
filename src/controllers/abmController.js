@@ -1,6 +1,9 @@
 let abmController = {
-    abm: function(req,res){
-        res.render("abm/")
+    index: function(req,res){
+        res.render("abm/index")
+    }, 
+    baja: function(req,res){
+        res.render("abm/baja")
     }, 
 }
 

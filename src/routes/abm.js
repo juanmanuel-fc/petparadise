@@ -6,7 +6,8 @@ const router = express.Router();
 const abmController = require("../controllers/abmController");
 
 //Crear las rutas  y ejecuta un metodo del controlador 
-router.get("/",abmController.abm);
+router.get("/",abmController.index);
+router.get("/baja",abmController.baja);
 
 //exportar el router
 module.exports = router;
