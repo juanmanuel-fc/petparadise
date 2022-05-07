@@ -14,6 +14,7 @@ app.use(express.static(publicPath));
 const mainRouter = require("./routes/main");
 const usersRouter = require("./routes/users");
 const productsRouter = require("./routes/products");
+const abmRouter = require("./routes/abm");
 
 
 
@@ -34,6 +35,9 @@ app.use("/register", usersRouter);
 
 //products
 app.use("/",productsRouter);
+
+//abm - alta | baja | modificaciones de los productos
+app.use("/abm", abmRouter);
 
  
 
