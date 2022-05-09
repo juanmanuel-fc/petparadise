@@ -27,7 +27,6 @@ Trabajo integrador grupal. Full Stack Node A Distancia TN09.Año 2022
 - Capacidad de sostén al colega.
 
 
-.........................................................
 # Pet Paradise. Retrospectiva al 09-05-2022
 
 ### Fortalezas
