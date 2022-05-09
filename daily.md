@@ -15,3 +15,4 @@ Fecha 4/05: Me reuní con mis compañeros para realizar las retro y dailys.
 Fecha 4/05 : 
 Adelante cosas del PG, hoy hice el punto 4 y 5 del proyecto integrador, no tuve ningún inconveniente.
 
+
