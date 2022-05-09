@@ -25,3 +25,26 @@ Trabajo integrador grupal. Full Stack Node A Distancia TN09.Año 2022
 
 - Incapié en la comunicación establecida.
 - Capacidad de sostén al colega.
+
+
+.........................................................
+# Pet Paradise. Retrospectiva al 09-05-2022
+
+### Fortalezas
+
+- Coordinación y tareas asignadas correctamente
+- Definición de jerarquías.
+- Organización de tareas en base a un criterio.
+
+
+### Debilidades
+
+- Finalizar asignaturas pendientes.
+
+### Aspectos a mejorar
+
+- Mantenimiento de la organización ejecutada
+
+### Continuar haciendo
+
+- Misma predisposición hacia las tareas correspondientes.
