@@ -2,7 +2,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const puertoExpress = 3000;
+const puertoExpress = 3030;
 
 app.set('view engine', 'ejs');
 
@@ -26,7 +26,7 @@ app.listen(process.env.PORT || puertoExpress, () => {
 
 //rutas de los archivos actualizados
 //main
-app.use("/",mainRouter);
+app.use("/",mainRouter); 
 app.use("/carrito", mainRouter);
 
 //users
@@ -34,7 +34,7 @@ app.use("/", usersRouter);
 app.use("/register", usersRouter);
 
 //products
-app.use("/",productsRouter);
+app.use("/products",productsRouter);
 
 //abm - alta | baja | modificaciones de los productos
 app.use("/abm", abmRouter);

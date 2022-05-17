@@ -1,0 +1,83 @@
+[
+ {
+  "id": 1,
+  "name": "Carne y pollo para perros adultos",
+  "price": "4555",
+  "brand": "Criadores",
+  "category": "perro",
+  "description": "El Alimento Maintenance Criadores Adulto está desarrollado especialmente para perros adultos de todos los tamaños, de entre 1 y 7 años de edad. Su fórmula incluye proteínas de carne y pollo de alto valor biológico, fibras, minerales, vitaminas y ácidos grasos, resultando en una nutrición completa para tu mascota.",
+  "image": "/img/productos/criadores-150002.png",
+  "codigo": "Bolsa 15 kilos. Código de producto: 148048"
+ },
+ {
+    "id": 2,
+    "name": "Alimento secos perros medianos",
+    "price": "7250",
+    "brand": "Old Prince",
+    "category": "perro",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut itaque eveniet sunt unde illum cumque est fugit, suscipit voluptas eius ut! Laborum explicabo repellendus saepe commodi est mollitia reprehenderit nobis.",
+    "image": "/img/productos/oldPrince-148048.png",
+    "codigo":"Bolsa 10 kilos. Código de producto: 135845"
+   },
+   {
+    "id": 3,
+    "name": "Adult mix tamaño perros medianos",
+    "price": "9250",
+    "brand": "Royal Canin",
+    "category": "perro",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut itaque eveniet sunt unde illum cumque est fugit, suscipit voluptas eius ut! Laborum explicabo repellendus saepe commodi est mollitia reprehenderit nobis.",
+    "image": "/img/productos/royalCanin-156157.jpg",
+    "codigo":"Bolsa 20 kilos. Código de producto: 167865"
+   },
+   {
+    "id": 4,
+    "name": "Alimento mix balanceado",
+    "price": "4300",
+    "brand": "Vital Balance",
+    "category": "perro",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut itaque eveniet sunt unde illum cumque est fugit, suscipit voluptas eius ut! Laborum explicabo repellendus saepe commodi est mollitia reprehenderit nobis.",
+    "image": "/img/productos/vitalCanBalaced_121070.png",
+    "codigo":"Bolsa 10 kilos. Código de producto: 115597"
+   },
+   {
+    "id": 5,
+    "name": "Alimento seco para gatos mayores",
+    "price": "2150",
+    "brand": "Purina Chow",
+    "category": "gato",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut itaque eveniet sunt unde illum cumque est fugit, suscipit voluptas eius ut! Laborum explicabo repellendus saepe commodi est mollitia reprehenderit nobis.",
+    "image": "/img/productos/excellent-alimento-para-gato.png",
+    "codigo":"Bolsa 12 kilos. Código de producto: 198753"
+   },
+   {
+    "id": 6,
+    "name": "Defense plus multiproteína",
+    "price": "3870",
+    "brand": "MV Alimento",
+    "category": "gato",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut itaque eveniet sunt unde illum cumque est fugit, suscipit voluptas eius ut! Laborum explicabo repellendus saepe commodi est mollitia reprehenderit nobis.",
+    "image": "/img/productos/mvholiday-alimento-para-gatos.png",
+    "codigo":"Bolsa 5 kilos. Código de producto: 1567893"
+   },
+   {
+    "id": 7,
+    "name": "Alimento rico en aminoácicos",
+    "price": "9800",
+    "brand": "Purina Cat",
+    "category": "gato",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut itaque eveniet sunt unde illum cumque est fugit, suscipit voluptas eius ut! Laborum explicabo repellendus saepe commodi est mollitia reprehenderit nobis.",
+    "image": "/img/productos/proplan-alimento-para-gatos.png",
+    "codigo":"Bolsa 7.5 kilos. Código de producto: 198756"
+   },
+   {
+    "id": 8,
+    "name": "Para gatos castrados young male",
+    "price": "7350",
+    "brand": "Royal Canin",
+    "category": "gato",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut itaque eveniet sunt unde illum cumque est fugit, suscipit voluptas eius ut! Laborum explicabo repellendus saepe commodi est mollitia reprehenderit nobis.",
+    "image": "/img/productos/royalcanin-alimento-para-gatos.png",
+    "codigo":"Bolsa 12 kilos. Código de producto: 159876"
+   }
+ 
+]
