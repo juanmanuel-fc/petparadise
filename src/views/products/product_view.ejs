@@ -85,16 +85,16 @@
 
                     <!-- la cabecera de la columna izquierda -->
                     <div class="main-izquierda__textos">
-                        <h3 class="main-izquierda__h3">Criadores</h3>
-                        <p class="main-izquieda__p"> Carne y pollo para perros adultos.</p>
+                        <h3 class="main-izquierda__h3"><%= product.brand %> </h3>
+                        <p class="main-izquieda__p"> <%= product.name %> </p>
                     </div>
                     <!-- la imagen -->
                     <div class="main-izquierda__img">
-                        <img src="/img/productos/criadores-150002.png" alt="">
+                        <img src="/img/productos/<%= product.image %> " alt="">
                     </div>
                     <!-- precio -->
                     <div class="main-izquierda__precio">
-                        <h3>$4555</h3>
+                        <h3>$<%= product.price %> </h3>
                     </div>
                     <!-- los botones de compra -->
                     <div class="main-izquierda__botones">
@@ -119,11 +119,14 @@
                 <div class="main-izquierda__textos-derecha">
                     <div class="main-izquierda__textos-derecha">
                         <h3>Descripción</h3>
-                        <p>El Alimento Maintenance Criadores Adulto está desarrollado especialmente para perros adultos de todos los tamaños, de entre 1 y 7 años de edad. Su fórmula incluye proteínas de carne y pollo de alto valor biológico, fibras, minerales, vitaminas y ácidos grasos, resultando en una nutrición completa para tu mascota.</p>
+                        <p><%= product.description %> </p>
                         <h3>Información Nutricional</h3>
                         <p class="main-izquierda__textoNegriga">Trigo, maíz, germen de maíz, harinas de soja, harina de carne y hueso, sorgo, aceite de pollo, zeolita, sal, hidrolizado proteico de pollo, dipropinato de calcio, BHT; BHA, núcleo vitamínico-mineral: vitaminas A, D3, E, K, B1, B6, B12, ácido fólico, ácido nicotínico, ácido pantoténico, biotina, colina, minerales, zinc, hierro, cobre, yodo, magneso, selenio.</p>
                     </div>
                 </div>
+                <a href="/products/edit/<%= product.id %> ">
+                    <button class="main-izquierda__submit" type="submit">Editar Producto</button>
+                    </a>
 
             </div>
 

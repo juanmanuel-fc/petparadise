@@ -77,8 +77,24 @@
             </nav>
             <section class="main-section-articles">
 
-                
+
+                <% products.forEach(product => { %>
                     <article class="main-article">
+                              
+                        <img src="/img/productos/<%= product.image %> " alt="">
+                        <div class="main-article__textos">
+                            <div class="main-article__nombre-precio" >
+                                <h3><%= product.brand %> </h3> <p>$<%= product.price %> </p>  
+                            </div>    
+                            <a href="/products/detail/<%= product.id %>  "><p> <%= product.name %>    </p> </a>   
+                            <p class="main-article__texto-detalle" main-article__texto-detalle><%= product.codigo %> </p>
+                        </div>    
+                    </article> 
+               <% }); %>
+
+
+                
+                    <!-- <article class="main-article">
                               
                         <img src="/img/productos/criadores-150002.png" alt="">
                         <div class="main-article__textos">
@@ -185,7 +201,7 @@
                         
                         <p class="main-article__texto-detalle">Bolsa 12 kilos.  Código de producto: 159876</p>        
                     </div>
-                </article>
+                </article> -->
        
             </section>
         </div>

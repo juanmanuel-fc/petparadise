@@ -92,7 +92,7 @@
         </div>
     
         <section class="abm-main-formulario-borde">
-            <form action="/" method="POST">
+            <form action="/products/edit/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data" >
                 
                 <!-- Nombre del producto -->
                 <div class="form-group">
@@ -100,7 +100,7 @@
                         <label for="nombreProducto">Nombre del producto</label>
                     </div> 
                     <div class="abm-form-group__inputField">
-                        <input class="form-group__ancho-input" type="text" name="nombreProducto" id="" placeholder="ej. Alimento mix balanceado">        
+                        <input value="<%= product.name %> " class="form-group__ancho-input" type="text" name="name" id="" placeholder="ej. Alimento mix balanceado">        
                     </div>
                 </div>
                 
@@ -110,37 +110,7 @@
                         <label for="marcaProducto">Marca</label>
                     </div>
                     <div class="abm-form-group__inputField">
-                        <input class="form-group__ancho-input" type="text" name="marcaProducto" id="" placeholder="ej. Royal Canin">        
-                    </div>
-                </div>
-                
-                <!-- Descripción del producto -->
-                <div class="form-group">
-                    <div class="abm-form-group__ancho-label">
-                        <label for="detalleProducto">Descripción</label>
-                    </div>
-                    <div class="abm-form-group__inputField">
-                        <textarea class="abmAlta__text-area" name="detalleProducto" id="" cols="30" rows="10" placeholder="ej. El alimento mix balanceado... "></textarea>
-                    </div>
-                </div>
-                
-                <!-- Información nutricional -->
-                <div class="form-group">
-                    <div class="abm-form-group__ancho-label">
-                        <label for="infoNutriProducto">Información nutricional</label>
-                    </div>
-                    <div class="abm-form-group__inputField">
-                        <textarea class="abmAlta__text-area" name="infoNutriProducto" id="" cols="30" rows="10" placeholder="ej. Trigo, maíz, germen de maíz, harinas de soja, ... "></textarea>
-                    </div>
-                </div>
-                
-                <!-- Imagen del producto -->
-                <div class="form-group">
-                    <div class="abm-form-group__ancho-label">
-                        <label for="imagenProducto">Imagen: .jpp o .png</label>
-                    </div>
-                    <div class="abm-form-group__inputField">
-                        <input type="file"   name="imagenProducto" accept=".jpg, .png" >        
+                        <input value="<%= product.brand %> " class="form-group__ancho-input" type="text" name="brand" id="" placeholder="ej. Royal Canin">        
                     </div>
                 </div>
                 
@@ -150,9 +120,49 @@
                         <label for="precioProducto">Precio</label>
                     </div>
                     <div class="abm-form-group__inputField">
-                        <input class="form-group__ancho-input-corto" type="text" name="precioProducto" id="" placeholder="ej. 5300">        
+                        <input value="<%= product.price %> " class="form-group__ancho-input-corto" type="text" name="price" id="" placeholder="ej. 5300">        
                     </div>
                 </div>
+
+                <!-- Descripción del producto -->
+                <div class="form-group">
+                    <div class="abm-form-group__ancho-label">
+                        <label for="detalleProducto">Descripción</label>
+                    </div>
+                    <div class="abm-form-group__inputField">
+                        <textarea  class="abmAlta__text-area" name="description" id="" cols="30" rows="10" placeholder="ej. El alimento mix balanceado... "><%= product.description %> </textarea>
+                    </div>
+                </div>
+                
+                <!-- Codigo de producto y kilos -->
+                <div class="form-group">
+                    <div class="abm-form-group__ancho-label">
+                        <label for="infoNutriProducto">Codigo y kilos</label>
+                    </div>
+                    <div class="abm-form-group__inputField">
+                        <textarea class="abmAlta__text-area" name="codigo" id="" cols="30" rows="10" placeholder="ej. Trigo, maíz, germen de maíz, harinas de soja, ... "><%= product.codigo %> </textarea>
+                    </div>
+                </div>
+
+                <!-- categoria -->
+                <div class="form-group">
+                    <label for="category" class="form-label">Categoría:</label>
+                    <select class="abm-form-group__inputField" name="category" id="category" class="form-input">
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                    </select>
+                </div>
+                
+                <!-- Imagen del producto -->
+                <div class="form-group">
+                    <div class="abm-form-group__ancho-label">
+                        <label for="imagenProducto">Imagen: .jpp o .png</label>
+                    </div>
+                    <div class="abm-form-group__inputField">
+                        <input type="file"   name="product-img" accept=".jpg, .png" >        
+                    </div>
+                </div>
+                
               
                 
                 <div class="form-group">
@@ -160,11 +170,13 @@
                         <label for=""></label>
                     </div>
                     <div class="abm-form-group__inputField">
-                        <button class="boton-submit" type="submit">Editar</button> 
-                        <button class="boton-submit" type="reset">Borrar</button>
-
+                        <button class="boton-submit" type="submit">Editar Producto</button> 
+                        <button class="boton-submit" type="reset">Resetear Campos </button>
                     </div>
                 </div>
+            </form>
+            <form action="/products/delete/<%= product.id %>?_method=DELETE"  method="POST" style="display: inline-flex"> 
+                <button class=" boton-delete" type="submit" class="action-button delete">ELIMINAR PRODUCTO</button>
             </form>
             
 

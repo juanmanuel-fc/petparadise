@@ -1,6 +1,22 @@
 //llamer al router de express
 const express = require("express");
 const router = express.Router();
+const path = require('path')
+
+//MULTER 
+const multer = require('multer');
+const storage = multer.diskStorage({
+    destination: (req,file, cb) =>{
+        cb(null,path.join(__dirname, '../../public/img/productos'))
+    },
+    filename: (req,file,cb) => {
+
+        const nweFilename = 'img-' + Date.now() + path.extname(file.originalname);
+        cb(null, nweFilename )
+    }
+});
+
+const upload = multer({storage: storage});
 
 //lamar al controlador
 const productsController = require("../controllers/productsController");
@@ -12,19 +28,18 @@ router.get("/",productsController.index)
 
 //creacion de productos
 router.get("/create",productsController.create)
-//aqui poner el post
+router.post('/', upload.single('product-img') ,productsController.store); 
 
 //pagina del detalle de producto !!!!fata el id
-router.get("/detail/",productsController.detail);
+router.get("/detail/:id",productsController.detail);
 
 
 //edicion de producto !!! falta poner el id
-router.get("/edit", productsController.edit)
-//aqui poner el put de la edicion
+router.get("/edit/:id", productsController.edit)
+router.put('/edit/:id', upload.single('product-img'),productsController.update); 
 
 //Eliminacion de productos
-router.get("/delete",productsController.delete)
-//aqui poner el delete del boton de eliminar 
+router.delete('/delete/:id', productsController.destroy); 
 
 //exportar el router
 module.exports = router;
