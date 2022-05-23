@@ -41,7 +41,25 @@
         <div class="main-subEncabezado">
             <p>Toda la información requerida del formulario es obligatoria.</p>
         </div>
-    
+<!--     
+        < % if (locals.errors) { %>
+            < % for (let error in errors) { %>
+
+                <p>< %= errors[error].msg %> </p>
+        
+            < % } %>  
+            
+        < % } %>  -->
+<!--         
+        < % if (locals.errors && errors.nombre) { %>
+            <div class="texto-advertencia">< %= errors.nombre.msg %></div>
+                   
+        < % } %>  -->
+
+
+
+
+
         <section class="main-formulario-borde">
             <form action="/users/register" method="POST">
                 
@@ -50,18 +68,47 @@
                         <label for="nombre">Ingrese su nombre</label>
                     </div> 
                     <div class="form-group__inputField">
-                        <input class="form-group__ancho-input" type="text" name="nombre" id="" placeholder="Ernesto Perez">        
+                        <input
+                            class="form-group__ancho-input"
+                            type="text" name="nombre"
+                            id="" placeholder="Ernesto Perez"
+                            value="<%= locals.oldInfo ? oldInfo.nombre : null %>"
+                        >        
                     </div>
+                      
                 </div>
+                <div class="form-group">
+                        <% if (locals.errors && errors.nombre) { %>
+                            <div class="texto-advertencia"><%= errors.nombre.msg %></div>
+                                   
+                        <% } %> 
+                </div>
+                
+
+
+
                   
                 <div class="form-group">
                     <div class="form-group__ancho-label">
                         <label for="usuario">Ingrese su e-mail</label>
                     </div>
                     <div class="form-group__inputField">
-                        <input class="form-group__ancho-input" type="email" name="email" id="" placeholder="@elfrailejon.com">        
-                    </div>
+                        <input  class="form-group__ancho-input"
+                                type="email" name="email"
+                                id=""
+                                placeholder="@elfrailejon.com"
+                                value="<%= locals.oldInfo ? oldInfo.email : null %>"
+                        >
+                    </div> 
                 </div>
+                <div class="form-group">
+                    <% if (locals.errors && errors.nombre) { %>
+                        <div class="texto-advertencia"><%= errors.email.msg %></div>
+                               
+                    <% } %> 
+                </div>
+
+
                 
                 <div class="form-group">
                     <div class="form-group__ancho-label">
@@ -70,7 +117,18 @@
                     <div class="form-group__inputField">
                         <input class="form-group__ancho-input" type="date" name="nacimiento" id="">        
                     </div>
+                    
                 </div>
+                <div class="form-group">
+                    <% if (locals.errors && errors.nombre) { %>
+                        <div class="texto-advertencia"><%= errors.nacimiento.msg %></div>
+                               
+                    <% } %> 
+                </div>
+
+
+
+
                 
                 <div class="form-group">
                     <div class="form-group__ancho-label">
@@ -79,7 +137,16 @@
                     <div class="form-group__inputField">
                         <input class="form-group__ancho-input" type="password" name="password" id="" placeholder="mínimo 8 caracteres">        
                     </div>
+                    
                 </div>
+                <div class="form-group">
+                    <% if (locals.errors && errors.nombre) { %>
+                        <div class="texto-advertencia"><%= errors.password.msg %></div>
+                               
+                    <% } %> 
+                </div>
+
+
                 
                 <div class="form-group">
                     <div class="form-group__ancho-label">
@@ -88,7 +155,16 @@
                     <div class="form-group__inputField">
                         <input class="form-group__ancho-input" type="checkbox" name="terminos" id="">        
                     </div>
+                    
                 </div>
+                <div class="form-group">
+                    <% if (locals.errors && errors.nombre) { %>
+                        <div class="texto-advertencia"><%= errors.terminos.msg %></div>
+                               
+                    <% } %> 
+                </div>
+
+
                 
                 <div class="form-group">
                     <div class="form-group__ancho-label">

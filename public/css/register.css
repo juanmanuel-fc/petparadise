@@ -141,6 +141,15 @@ main {
     padding: 5px 5px 10px 5px;
 }
 
+.texto-advertencia {
+    color:#cc0000;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px
+}
+
 
 /* A partir de aquí todos los estilos son del módulo de ABM */
 

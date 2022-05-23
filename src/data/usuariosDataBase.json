@@ -29,5 +29,62 @@
 		"nacimiento": "1973-02-22",
 		"password": "999999999",
 		"terminos": "on"
+	},
+	{
+		"id": 5,
+		"nombre": "Nico",
+		"email": "nico@nico.com",
+		"nacimiento": "2002-03-20",
+		"password": "12345678"
+	},
+	{
+		"id": 6,
+		"nombre": "",
+		"email": "",
+		"nacimiento": "",
+		"password": "",
+		"terminos": "on"
+	},
+	{
+		"id": 7,
+		"nombre": "Juan Manuel",
+		"email": "juamauel@email.com",
+		"password": "123456789",
+		"terminos": "on"
+	},
+	{
+		"id": 8,
+		"nombre": "juan",
+		"email": "juanmanuel22@me.com",
+		"password": "123456799",
+		"terminos": "on"
+	},
+	{
+		"id": 9,
+		"nombre": "Karen Todel",
+		"email": "karen@karen.com",
+		"password": "123456789",
+		"terminos": "on"
+	},
+	{
+		"id": 10,
+		"nombre": "Ernesto Perez",
+		"email": "elfrailejon@jon.com",
+		"password": "12346789",
+		"terminos": "on"
+	},
+	{
+		"id": 11,
+		"nombre": "Ernesto Perez",
+		"email": "elfrailejon@jon.com",
+		"password": "12346789",
+		"terminos": "on"
+	},
+	{
+		"id": 12,
+		"nombre": "Ernesto Perez",
+		"email": "elfrailejon@jon.com",
+		"password": "123486789",
+		"terminos": "on"
 	}
 ]
