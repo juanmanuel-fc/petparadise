@@ -1,79 +1,5 @@
 [
 	{
-		"id": 1,
-		"nombre": "Nombre persona ID 1",
-		"usuario": "Nombre de usuario USUARIO ID 1",
-		"email": "Email usuario ID 1",
-		"password": "",
-		"terminos": ""
-	},
-	{
-		"id": 2,
-		"nombre": "",
-		"email": "",
-		"nacimiento": "",
-		"password": ""
-	},
-	{
-		"id": 3,
-		"nombre": "Ernesto Perez",
-		"email": "ernesto@elfrailejon.com",
-		"nacimiento": "2022-04-25",
-		"password": "12345678",
-		"terminos": "on"
-	},
-	{
-		"id": 4,
-		"nombre": "Juan Manuel",
-		"email": "juanma@juanma.com",
-		"nacimiento": "1973-02-22",
-		"password": "999999999",
-		"terminos": "on"
-	},
-	{
-		"id": 5,
-		"nombre": "Nico",
-		"email": "nico@nico.com",
-		"nacimiento": "2002-03-20",
-		"password": "12345678"
-	},
-	{
-		"id": 6,
-		"nombre": "",
-		"email": "",
-		"nacimiento": "",
-		"password": "",
-		"terminos": "on"
-	},
-	{
-		"id": 7,
-		"nombre": "Juan Manuel",
-		"email": "juamauel@email.com",
-		"password": "123456789",
-		"terminos": "on"
-	},
-	{
-		"id": 8,
-		"nombre": "juan",
-		"email": "juanmanuel22@me.com",
-		"password": "123456799",
-		"terminos": "on"
-	},
-	{
-		"id": 9,
-		"nombre": "Karen Todel",
-		"email": "karen@karen.com",
-		"password": "123456789",
-		"terminos": "on"
-	},
-	{
-		"id": 10,
-		"nombre": "Ernesto Perez",
-		"email": "elfrailejon@jon.com",
-		"password": "12346789",
-		"terminos": "on"
-	},
-	{
 		"id": 11,
 		"nombre": "Ernesto Perez",
 		"email": "elfrailejon@jon.com",
@@ -85,6 +11,41 @@
 		"nombre": "Ernesto Perez",
 		"email": "elfrailejon@jon.com",
 		"password": "123486789",
+		"terminos": "on"
+	},
+	{
+		"id": 13,
+		"nombre": "Ernesto Perez",
+		"email": "elfrailejon@jon.com",
+		"password": "123456789",
+		"terminos": "on"
+	},
+	{
+		"id": 14,
+		"nombre": "Ernesto Perez",
+		"email": "elfrailejon@jon.com",
+		"password": "123456789",
+		"terminos": "on"
+	},
+	{
+		"id": 15,
+		"nombre": "adsf",
+		"email": "elfrailejon@jon.com",
+		"password": "12345678",
+		"terminos": "on"
+	},
+	{
+		"id": 16,
+		"nombre": "Ernesto Perez",
+		"email": "elfrailejon@jon.com",
+		"password": "123456789",
+		"terminos": "on"
+	},
+	{
+		"id": 17,
+		"nombre": "Juan Manuel",
+		"email": "juanma@junama.com",
+		"password": "999999999",
 		"terminos": "on"
 	}
 ]

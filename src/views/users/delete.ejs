@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Paradise - Usuarios</title>
+    <title>CONFIRMAR EMILIMAR</title>
 
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/styles-product.css">
@@ -36,33 +36,43 @@
         
 
         <div class="main-encabezado">
-            <h1>Usuarios registrados</h1> <div><i class="fa-solid fa-users"></i></div> 
+            <h1>CONFIRMAR ELIMINAR</h1> <div><i class="fa-solid fa-trash-can-arrow-up"></i></div> 
         </div>
-        <div class="main-subEncabezado">
-            <p>Todos las siguientes personas se han registrado en el sitio.</p>
-        </div>
-
+        
 
         <!-- Inicio listado usuarios -->
         <section class="main__contenedor-personas">
-            <% users.forEach(person => { %>
+            
+            <% destroy.forEach(persona => { %>
+             
+            
+
                 <article class="main__borde-persona">
                 
-                    <h2>ID: <%= person.id %></h2>
+                    <h2>SEGURO QUE QUIERE ELIMINAR REGISTRO?</h2>
+                    <h2>ID: <%= persona.id %></h2>
+                    <br>
                     <p>
-                        Nombre: <%= person.nombre %> <br>
-                        Email: <%= person.email %> <br>
-                        Fecha de nacimiento: <%= person.nacimiento %> <br>
-                        Contraseña: <%= person.password %> <br>
+                         
+                        Nombre: <%= persona.nombre %> <br>
+                        Email: <%= persona.email %> <br>
+                        Fecha de nacimiento: <%= persona.nacimiento %> <br>
+                        
                     </p>
-                    <p>
-                        <a href="/users/editar/<%= person.id %>">Editar usuario id <%= person.id %></a> <br>
-                        <a href="/users/eliminar/<%= person.id %>" class="eliminar">Eliminar usuario id <%= person.id %></a> <br>
+                    <p> 
+                        <a href="/users/list">Volver a la págia de usuarios</a> <br>
+                    </p>
+                    <br><br>
+                    <p> 
+                        <form action="/users/destroy/<%= persona.id %>?_method=DELETE" method="POST">
+                            <button type="submit" class="button__destroy"> CONFIRMAR ELIMINACIÓN</button>
+                        </form>    
                     </p>
                     
                 </article>
-                
-            <% }) %>
+            
+                <% }) %> 
+            
         </section>
     </main>
 
