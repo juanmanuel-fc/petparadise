@@ -1,3 +1,33 @@
 [
-    
+	{
+		"id": 1,
+		"nombre": "Nombre persona ID 1",
+		"usuario": "Nombre de usuario USUARIO ID 1",
+		"email": "Email usuario ID 1",
+		"password": "",
+		"terminos": ""
+	},
+	{
+		"id": 2,
+		"nombre": "",
+		"email": "",
+		"nacimiento": "",
+		"password": ""
+	},
+	{
+		"id": 3,
+		"nombre": "Ernesto Perez",
+		"email": "ernesto@elfrailejon.com",
+		"nacimiento": "2022-04-25",
+		"password": "12345678",
+		"terminos": "on"
+	},
+	{
+		"id": 4,
+		"nombre": "Juan Manuel",
+		"email": "juanma@juanma.com",
+		"nacimiento": "1973-02-22",
+		"password": "999999999",
+		"terminos": "on"
+	}
 ]

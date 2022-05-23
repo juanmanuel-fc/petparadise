@@ -9,6 +9,11 @@ const puertoExpress = 3030;
 
 app.set('view engine', 'ejs');
 
+// configurar el entry point para que pueda capturar info envida por post
+app.use(express.urlencoded({ extended:false } ));
+app.use(express.json());
+
+
 //rutas estaticas
 const publicPath = path.resolve(__dirname, "../public");
 app.use(express.static(publicPath));

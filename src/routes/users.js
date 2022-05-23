@@ -10,5 +10,10 @@ router.get("/login",usersController.login);
 router.get("/register",usersController.register);
 
 
+router.post("/register", usersController.createUser);
+// redirection listando usuarios después de haber enviado info por POST
+router.get("/list", usersController.list);
+
+
 //exportar el router
 module.exports = router;
