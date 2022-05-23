@@ -7,7 +7,7 @@ const usersController = require("../controllers/usersController");
 
 //Crear las rutas  y ejecuta un metodo del controlador 
 router.get("/login",usersController.login);
-router.get("/registro",usersController.register);
+router.get("/register",usersController.register);
 
 
 //exportar el router

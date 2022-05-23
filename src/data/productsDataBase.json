@@ -1,15 +1,5 @@
 [
  {
-  "id": 1,
-  "name": "Carne y pollo para perros adultos",
-  "price": "4555",
-  "brand": "Criadores",
-  "category": "perro",
-  "description": "El Alimento Maintenance Criadores Adulto está desarrollado especialmente para perros adultos de todos los tamaños, de entre 1 y 7 años de edad. Su fórmula incluye proteínas de carne y pollo de alto valor biológico, fibras, minerales, vitaminas y ácidos grasos, resultando en una nutrición completa para tu mascota.",
-  "image": "/criadores-150002.png",
-  "codigo": "Bolsa 15 kilos. Código de producto: 148048"
- },
- {
   "id": 2,
   "name": "Alimento secos perros medianos",
   "price": "7250",
@@ -50,16 +40,6 @@
   "codigo": "Bolsa 12 kilos. Código de producto: 198753"
  },
  {
-  "id": 6,
-  "name": "Defense plus multiproteína",
-  "price": "3870",
-  "brand": "MV Alimento",
-  "category": "gato",
-  "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut itaque eveniet sunt unde illum cumque est fugit, suscipit voluptas eius ut! Laborum explicabo repellendus saepe commodi est mollitia reprehenderit nobis.",
-  "image": "/mvholiday-alimento-para-gatos.png",
-  "codigo": "Bolsa 5 kilos. Código de producto: 1567893"
- },
- {
   "id": 7,
   "name": "Alimento rico en aminoácicos",
   "price": "9800",
@@ -78,5 +58,25 @@
   "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut itaque eveniet sunt unde illum cumque est fugit, suscipit voluptas eius ut! Laborum explicabo repellendus saepe commodi est mollitia reprehenderit nobis.",
   "image": "/royalcanin-alimento-para-gatos.png",
   "codigo": "Bolsa 12 kilos. Código de producto: 159876"
+ },
+ {
+  "id": 1,
+  "name": "Carne y pollo para perros adultos ",
+  "price": "7777",
+  "codigo": "Bolsa 15 kilos. Código de producto: 148048 ",
+  "category": "perro",
+  "description": "El Alimento Maintenance Criadores Adulto está desarrollado especialmente para perros adultos de todos los tamaños, de entre 1 y 7 años de edad. Su fórmula incluye proteínas de carne y pollo de alto valor biológico, fibras, minerales, vitaminas y ácidos grasos, resultando en una nutrición completa para tu mascota. ",
+  "brand": "Criadores ",
+  "image": "img-1653286810254.png"
+ },
+ {
+  "id": 6,
+  "name": "Defense plus multiproteína ",
+  "price": "3870 ",
+  "codigo": "Bolsa 5 kilos. Código de producto: 1567893 ",
+  "category": "perro",
+  "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut itaque eveniet sunt unde illum cumque est fugit, suscipit voluptas eius ut! Laborum explicabo repellendus saepe commodi est mollitia reprehenderit nobis. ",
+  "brand": "MV Alimento ",
+  "image": "img-1653286880367.png"
  }
 ]

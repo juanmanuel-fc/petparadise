@@ -33,8 +33,11 @@ app.use("/",mainRouter);
 app.use("/carrito", mainRouter);
 
 //users
-app.use("/", usersRouter);
-app.use("/register", usersRouter);
+// app.use("/", usersRouter);
+// app.use("/register", usersRouter);
+
+//users
+app.use("/users", usersRouter);
 
 //products
 app.use("/products",productsRouter);
