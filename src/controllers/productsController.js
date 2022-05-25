@@ -63,18 +63,19 @@ let productsController = {
 
         // !!!!!!!! faltan validaciones del formulario
         //!!!! fata subir el archivo de la imagen por defecto
-		let productoEditado = {
-			id:  product.id,
-            name: req.body.name,
-            price: req.body.price,
-            codigo: req.body.codigo,
-            category: req.body.category,
-            description: req.body.description,
-            brand: req.body.brand,
-            image: req.file.filename 
-		}
-		
-		let productsAll = products.filter(product => product.id != req.params.id);
+		if(req.file){
+			let productoEditado = {
+				id:  product.id,
+				name: req.body.name,
+				price: req.body.price,
+				codigo: req.body.codigo,
+				category: req.body.category,
+				description: req.body.description,
+				brand: req.body.brand,
+				image: req.file.filename 
+				
+			}
+			let productsAll = products.filter(product => product.id != req.params.id);
 
 		
 		products = productsAll
@@ -85,6 +86,30 @@ let productsController = {
 		fs.writeFileSync(productsFilePath, productsJSON)
 
 		res.redirect("/products");
+		}else{
+			let productoEditado = {
+				id:  product.id,
+				name: req.body.name,
+				price: req.body.price,
+				codigo: req.body.codigo,
+				category: req.body.category,
+				description: req.body.description,
+				brand: req.body.brand,
+				image: product.image 
+				
+			}
+			let productsAll = products.filter(product => product.id != req.params.id);
+
+		
+		products = productsAll
+
+		products.push(productoEditado)
+		
+		let productsJSON =  JSON.stringify(products,null," ");
+		fs.writeFileSync(productsFilePath, productsJSON)
+
+		res.redirect("/products");
+		}	
         
     },
     destroy : (req, res) => {
