@@ -120,6 +120,9 @@ let productsController = {
 
 		res.redirect("/products");
 		
+	},
+	confirmDestroy: (req, res) =>{
+		res.render("abm/confirmacion-eliminar-producto")
 	}
     
 }

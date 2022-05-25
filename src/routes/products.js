@@ -41,5 +41,9 @@ router.put('/edit/:id', upload.single('product-img'),productsController.update);
 //Eliminacion de productos
 router.delete('/delete/:id', productsController.destroy); 
 
+//confirmacion eliminar
+router.get("/confirmDelete/:id", productsController.confirmDestroy)
+
+
 //exportar el router
 module.exports = router;
