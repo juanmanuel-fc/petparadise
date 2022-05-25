@@ -20,22 +20,23 @@ const validations = [
 //Crear las rutas  y ejecuta un metodo del controlador 
 router.get("/login",usersController.login);
 router.get("/register",usersController.register);
-
-// router.get("/error", usersController.error);
-
+ 
 
 // redirection listando usuarios después de haber enviado info por POST
 router.post("/register", validations, usersController.createUser);
 router.get("/list", usersController.list);
+
 
 // confirmar eliminar usuarios
 router.get("/eliminar/:id", usersController.confirmarEliminar);
 // eliminar definitivamente
 router.delete("/destroy/:id", usersController.destroy);
 
+
 // edit this
 router.get('/editar/:id', usersController.editar);
 router.put("/editar/:id", usersController.update);
+
 
 //exportar el router
 module.exports = router;

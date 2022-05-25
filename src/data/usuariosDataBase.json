@@ -1,21 +1,17 @@
 [
  {
-  "id": 17,
-  "nombre": "Juan Manuel",
-  "email": "juanma@junama.com",
-  "password": "999999999",
-  "terminos": "on"
- },
- {
-  "id": 18,
-  "nombre": "Juan",
-  "email": "juanma@junama.com",
-  "password": "123456789",
-  "terminos": "on"
- },
- {
   "id": "16",
   "nombre": "Ernesto Perez Juanma ",
   "email": "elfrailejon@jon.com.ar"
+ },
+ {
+  "id": "17",
+  "nombre": "Juan Manuel Frailejon",
+  "email": "juanma@junama.com.rus"
+ },
+ {
+  "id": "18",
+  "nombre": "Juan Manuel Fernandez",
+  "email": "juanma@junama.com.uy"
  }
 ]
