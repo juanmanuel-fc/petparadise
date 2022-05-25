@@ -33,5 +33,9 @@ router.get("/eliminar/:id", usersController.confirmarEliminar);
 // eliminar definitivamente
 router.delete("/destroy/:id", usersController.destroy);
 
+// edit this
+router.get('/editar/:id', usersController.editar);
+router.put("/editar/:id", usersController.update);
+
 //exportar el router
 module.exports = router;

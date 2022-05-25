@@ -28,7 +28,7 @@ const abmRouter = require("./routes/abm");
 
 
 app.listen(process.env.PORT || puertoExpress, () => {
-    console.log("server corriendo en el puerto" + puertoExpress);
+    console.log("Server corriendo en el puerto ", puertoExpress);
 })
 
 
@@ -51,25 +51,3 @@ app.use("/products",productsRouter);
 app.use("/abm", abmRouter);
 
  
-
-// // RUTAS DE LOS ARCHIVOS ANTIGUOS
-// app.get("/", (req, res) => {
-//     res.sendFile(path.join(__dirname, "/src/views/main/index.html"));
-// });
-
-// app.get("/carrito", (req, res) => {
-//     res.sendFile(path.join(__dirname, "/src/views/main/carrito.html"));
-// });
-
-// app.get("/product-review", (req, res) => {
-//     res.sendFile(path.join(__dirname, "/src/views/products/product_view.html"));
-// });
-
-
-// app.get("/login", (req, res) => {
-//     res.sendFile(path.join(__dirname, "/src/views/users/login.html"));
-// });
-
-// app.get("/registro", (req, res) => {
-//     res.sendFile(path.join(__dirname, "/src/views/users/register.html"));
-// });
