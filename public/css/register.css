@@ -136,6 +136,14 @@ main {
     color: rgb(255, 255, 255);
     
 }
+.link-eliminar{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 32%;
+    left: 50%;
+    
+}
 .segundo-formulario{
     position: relative;
     bottom: 32%;
