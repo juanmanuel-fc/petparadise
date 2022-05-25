@@ -28,6 +28,10 @@ router.get("/register",usersController.register);
 router.post("/register", validations, usersController.createUser);
 router.get("/list", usersController.list);
 
+// confirmar eliminar usuarios
+router.get("/eliminar/:id", usersController.confirmarEliminar);
+// eliminar definitivamente
+router.delete("/destroy/:id", usersController.destroy);
 
 //exportar el router
 module.exports = router;

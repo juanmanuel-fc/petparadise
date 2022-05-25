@@ -61,8 +61,55 @@ let usersController = {
     },
 
     list: function (req, res) {
-        res.render("users/list");
-    }
+
+        res.render("users/list", {users: users});
+
+    },
+
+    confirmarEliminar: (req, res) => {
+
+		const deleteThis = parseInt(req.params.id);
+
+		// get the info of the product that will be deleted
+		const destroy = users.filter( user => {
+
+			if (deleteThis === user.id ) {
+				return deleteThis;
+			}
+
+		});
+		
+		res.render("users/delete", {destroy: destroy});
+
+	},
+
+    // // Delete - Delete one product from DB
+	destroy: (req, res) => {
+		
+		// erase this id
+		const id = req.params.id;
+
+		// var to store the index of products array to be erased
+		let eraseThis = null;
+
+		// find the array index where the id is
+		users.forEach( (person, index) => {
+			if (person.id === id) {
+				eraseThis = index;
+			}
+		});
+
+		// remove the index from the array
+		users.splice(eraseThis, 1);
+
+		// write the changes to the JSON file
+		const usersJSON = JSON.stringify(users, null, "\t");
+		fs.writeFileSync(usersFilePath, usersJSON);
+
+		res.redirect("/users/list");
+
+
+	}
 
 
     
