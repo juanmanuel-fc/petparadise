@@ -102,8 +102,7 @@ let usersController = {
         const usersJSON = JSON.stringify(filteredUsers , null, "\t");
         fs.writeFileSync(usersFilePath, usersJSON);
 
-        // res.redirect("/users/list");
-        res.redirect("/");
+        res.redirect("/users/list");
         
     
 	},
@@ -132,8 +131,7 @@ let usersController = {
         let usuariosJSON =  JSON.stringify(usersAll, null, " ");
 		fs.writeFileSync(usersFilePath, usuariosJSON);
 
-		// res.redirect("/users/list");
-		res.redirect("/");
+		res.redirect("/users/list");
 
     }
 
