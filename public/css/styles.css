@@ -241,10 +241,10 @@ a:hover {
 }
 
 .main-principal__nav > h3 {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
     padding-top: 16px;
     padding-left: 10px;
-    color: #333
 }
 
 .main-principal__nav > ul {
@@ -252,7 +252,7 @@ a:hover {
 }
 
 .main-principal__nav > ul > li {
-    font-size: 12px;
+    font-size: 14px;
     padding-top: 5px;
     padding-left: 10px;
 }
@@ -357,7 +357,7 @@ a:hover {
     padding-top: 5px;
 }
 
-.main-article > img {
+.main-article > a > img {
     /* max-width: 150px; */
     height: 145px;
     width: 145px;

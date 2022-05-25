@@ -79,6 +79,7 @@
 
 
                 <% products.forEach(product => { %>
+                   <a href="/products/detail/<%= product.id %>  ">
                     <article class="main-article">
                               
                         <img src="/img/productos/<%= product.image %> " alt="">
@@ -90,6 +91,7 @@
                             <p class="main-article__texto-detalle" main-article__texto-detalle><%= product.codigo %> </p>
                         </div>    
                     </article> 
+                </a>
                <% }); %>
 
 
