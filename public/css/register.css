@@ -103,6 +103,7 @@ main {
     background-color: #ebebeb;
 }
 
+
 .boton-submit {
     width: 49%;
     color: #000;
@@ -113,7 +114,10 @@ main {
     cursor: pointer;
     line-height: 24px;   
 }
-
+.boton-enviar{
+    width: 100%;
+    margin-bottom: 6px;
+}
 .boton-delete {
     width: 57%;
     color: #000;
@@ -125,6 +129,17 @@ main {
     line-height: 24px;
     margin-top: 15px;
     padding: 5px;   
+}
+.boton-delete-producto{
+    background: #d00;
+    border: 5px solid #d00;
+    color: rgb(255, 255, 255);
+    
+}
+.segundo-formulario{
+    position: relative;
+    bottom: 32%;
+    left: 50%;
 }
 
 .main-terminos > p {
@@ -208,7 +223,13 @@ main {
 .abm-form-group__inputField {
     width: 70%;
 }
-
+.abm-form-group__select{
+    border-radius: 6px;
+    border: 2px solid #999;
+}
+.abm-form-group__file{
+    width: 70%;
+}
 .abm-main__texto-advertencia {
     color: #cc0000;
 }

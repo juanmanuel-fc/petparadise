@@ -34,6 +34,7 @@ clarito, alineados a la izquireda */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
 }
 
 /* div para la imagen centrada */
@@ -41,6 +42,10 @@ clarito, alineados a la izquireda */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+.detalle-producto__img{
+    height: 180px;
+    width: 180px;
 }
 
 /* div para el precio y los botones de 
