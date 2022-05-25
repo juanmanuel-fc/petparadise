@@ -46,6 +46,9 @@ clarito, alineados a la izquireda */
 .detalle-producto__img{
     height: 180px;
     width: 180px;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* div para el precio y los botones de 
