@@ -174,14 +174,15 @@
                     <div class="abm-form-group__inputField">
                         <button class="boton-submit boton-enviar" type="submit">Editar Producto</button> 
                         <button class="boton-submit" type="reset">Resetear Campos </button>
-        </form>            
-                        <form class="segundo-formulario"  action="/products/delete/<%= product.id %>?_method=DELETE"  method="POST">
+                    </form>            
+                    <a href="/products/confirmDelete/<%= product.id %>" class="boton-submit boton-delete-producto link-eliminar">Eliminar Producto</a>
+                </div>
+            </div>
+                    <!-- <form class="segundo-formulario"  action="/products/confirmDelete/<%= product.id %>"  method="get">
                 
                             <button class="boton-submit boton-delete-producto" type="submit">Eliminar Producto </button>
                 
-                        </form>
-                    </div>
-                </div>
+                        </form> -->
 
               
               <!-- </form> -->

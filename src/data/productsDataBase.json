@@ -78,15 +78,5 @@
   "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut itaque eveniet sunt unde illum cumque est fugit, suscipit voluptas eius ut! Laborum explicabo repellendus saepe commodi est mollitia reprehenderit nobis. ",
   "brand": "MV Alimento ",
   "image": "img-1653286880367.png"
- },
- {
-  "id": 9,
-  "name": "pruebaaaaaaaa",
-  "price": "543",
-  "codigo": "sfd",
-  "category": "perro",
-  "description": "sdf",
-  "brand": "nose",
-  "image": "img-1653501135861.jpg"
  }
 ]

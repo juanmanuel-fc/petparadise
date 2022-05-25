@@ -122,7 +122,11 @@ let productsController = {
 		
 	},
 	confirmDestroy: (req, res) =>{
-		res.render("abm/confirmacion-eliminar-producto")
+
+		let id = req.params.id;
+        const product = products.find(product => product.id == id);
+
+		res.render("abm/confirmacion-eliminar-producto", {product:product})
 	}
     
 }

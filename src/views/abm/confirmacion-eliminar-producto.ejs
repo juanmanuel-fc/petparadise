@@ -1,12 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eliminar Producto</title>
+    <title>CONFIRMAR EMILIMAR</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles-product.css">
+    <link rel="stylesheet" href="/css/carrito.css">
+    <link rel="stylesheet" href="/css/register.css">
+        
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Nunito+Sans:wght@200;300;400;700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/be2f25d2d7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    aqui toy
+    
+    
+
+   <!-- aqui va el header desde el partial -->
+   <%- include("../partials/header")  %> 
+  
+    <main>
+        
+
+        <div class="main-encabezado">
+            <h1>CONFIRMAR ELIMINAR</h1> <div><i class="fa-solid fa-trash-can-arrow-up"></i></div> 
+        </div>
+        
+
+        <!-- Inicio listado usuarios -->
+        <section class="main__contenedor-personas">
+            
+            
+             
+            
+
+                <article class="main__borde-persona">
+                
+                    <h2>¿SEGURO QUE QUIERE ELIMINAR EL PRODUCTO?</h2>
+                    <h2>ID: <%= product.id %></h2>
+                    <br>
+                    <p>
+                         
+                        Nombre: <%= product.name %> <br>
+                        Codigo: <%= product.codigo %> <br>
+                        <br>
+                        Descripción: <%= product.description %> <br>
+                        
+                    </p>
+                    <br>
+                    <p> 
+                        <a href="/products">Volver a la págia de Productos</a> <br>
+                    </p>
+                    <br><br>
+                    <p> 
+                        <form action="/products/delete/<%= product.id %>?_method=DELETE"  method="POST">
+                            <button type="submit" class="button__destroy"> CONFIRMAR ELIMINACIÓN</button>
+                        </form>    
+                    </p>
+                    
+                </article>
+            
+                
+            
+        </section>
+    </main>
+
+    <!-- insertar el footer con partials ejs -->
+    <%- include("../partials/footer")  %> 
+    
+    
 </body>
 </html>
