@@ -43,12 +43,13 @@
         <!-- Inicio listado usuarios -->
         <section class="main__contenedor-personas">
             
-            <% destroy.forEach(persona => { %>
+            
              
             
+
                 <article class="main__borde-persona">
                 
-                    <h2>SEGURO QUE QUIERE ELIMINAR REGISTRO?</h2>
+                    <h2>Confirmar eliminación registro?</h2>
                     <h2>ID: <%= persona.id %></h2>
                     <br>
                     <p>
@@ -59,7 +60,7 @@
                         
                     </p>
                     <p> 
-                        <a href="/users/list">Volver a la págia de usuarios</a> <br>
+                        <a href="/users/list">Volver al listado de usuarios</a> <br>
                     </p>
                     <br><br>
                     <p> 
@@ -70,7 +71,7 @@
                     
                 </article>
             
-                <% }) %> 
+            
             
         </section>
     </main>

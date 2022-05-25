@@ -73,15 +73,15 @@ let usersController = {
         const deleteThis = parseInt(req.params.id);
 
 		// get the info of the product that will be deleted
-		const destroy = users.filter( user => {
+		const destroy = users.find( user => {
 
-			if (deleteThis === user.id ) {
+			if (deleteThis == user.id ) {
 				return deleteThis;
 			}
 
 		});
 		
-		res.render("users/delete", {destroy: destroy});
+		res.render("users/delete", {persona: destroy});
 
 
 	},
