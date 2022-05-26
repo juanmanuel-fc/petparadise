@@ -3,6 +3,16 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
+const morgan = require("morgan");
+
+
+//requerimientos de routes
+const mainRouter = require("./routes/main");
+const usersRouter = require("./routes/users");
+const productsRouter = require("./routes/products");
+const abmRouter = require("./routes/abm");
+
+app.use(morgan("dev"));
 
 app.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
 const puertoExpress = 3030;
@@ -18,17 +28,13 @@ app.use(express.json());
 const publicPath = path.resolve(__dirname, "../public");
 app.use(express.static(publicPath));
 
-//requerimientos de routes
-const mainRouter = require("./routes/main");
-const usersRouter = require("./routes/users");
-const productsRouter = require("./routes/products");
-const abmRouter = require("./routes/abm");
+
 
 
 
 
 app.listen(process.env.PORT || puertoExpress, () => {
-    console.log("server corriendo en el puerto" + puertoExpress);
+    console.log("Server corriendo en el puerto ", puertoExpress);
 })
 
 
@@ -51,25 +57,3 @@ app.use("/products",productsRouter);
 app.use("/abm", abmRouter);
 
  
-
-// // RUTAS DE LOS ARCHIVOS ANTIGUOS
-// app.get("/", (req, res) => {
-//     res.sendFile(path.join(__dirname, "/src/views/main/index.html"));
-// });
-
-// app.get("/carrito", (req, res) => {
-//     res.sendFile(path.join(__dirname, "/src/views/main/carrito.html"));
-// });
-
-// app.get("/product-review", (req, res) => {
-//     res.sendFile(path.join(__dirname, "/src/views/products/product_view.html"));
-// });
-
-
-// app.get("/login", (req, res) => {
-//     res.sendFile(path.join(__dirname, "/src/views/users/login.html"));
-// });
-
-// app.get("/registro", (req, res) => {
-//     res.sendFile(path.join(__dirname, "/src/views/users/register.html"));
-// });

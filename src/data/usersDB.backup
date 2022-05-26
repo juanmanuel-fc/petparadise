@@ -1,0 +1,58 @@
+[
+	{
+		"id": 1,
+		"nombre": "Ernesto Perez",
+		"email": "elfrailejon@jon.com",
+		"password": "123486789",
+		"terminos": "on"
+	},
+	{
+		"id": 2,
+		"nombre": "Juanma Fernandez",
+		"email": "juanma@juanma.com",
+		"password": "123456789",
+		"terminos": "on"
+	},
+	{
+		"id": 3,
+		"nombre": "Karen Todel",
+		"email": "karen@karen.com",
+		"password": "123456789",
+		"terminos": "on"
+	},
+	{
+		"id": 4,
+		"nombre": "Nico Manuel",
+		"email": "nico@nico.com.ar",
+		"password": "12345678",
+		"terminos": "on"
+	},
+	{
+		"id": 5,
+		"nombre": "Micki Chiara",
+		"email": "micalea@micaela.com",
+		"password": "123456789",
+		"terminos": "on"
+	},
+	{
+		"id": 6,
+		"nombre": "Daniel Acevedo",
+		"email": "daniel@daniel.com",
+		"password": "999999999",
+		"terminos": "on"
+	},
+	{
+		"id": 7,
+		"nombre": "Valentin",
+		"email": "valentin@valentin.com.ar",
+		"password": "123456789",
+		"terminos": "on"
+	},
+	{
+		"id": 19,
+		"nombre": "Ernestro Perez",
+		"email": "perez@perez.com",
+		"password": "9999999999",
+		"terminos": "on"
+	}
+]

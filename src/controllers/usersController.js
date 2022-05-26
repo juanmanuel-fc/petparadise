@@ -2,9 +2,11 @@ const fs = require("fs");
 const path = require("path");
 
 const { validationResult } = require("express-validator");
+const productsController = require("./productsController");
+const { edit } = require("./productsController");
 
 const usersFilePath = path.join(__dirname, "../data/usuariosDataBase.json");
-const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+
 
 let usersController = {
     
@@ -18,6 +20,7 @@ let usersController = {
 
     createUser: function (req, res) {
 
+        const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
         
         const resultValidation = validationResult(req);
 
@@ -62,55 +65,89 @@ let usersController = {
 
     list: function (req, res) {
 
+        const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+
+        // console.log("users");
         res.render("users/list", {users: users});
 
     },
 
     confirmarEliminar: (req, res) => {
 
-		const deleteThis = parseInt(req.params.id);
+        const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+
+        const deleteThis = parseInt(req.params.id);
 
 		// get the info of the product that will be deleted
-		const destroy = users.filter( user => {
+		const destroy = users.find( user => {
 
-			if (deleteThis === user.id ) {
+			if (deleteThis == user.id ) {
 				return deleteThis;
 			}
 
 		});
 		
-		res.render("users/delete", {destroy: destroy});
+		res.render("users/delete", {persona: destroy});
+
 
 	},
 
     // // Delete - Delete one product from DB
-	destroy: (req, res) => {
+	destroy: function (req, res) {
+
+        const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 		
-		// erase this id
-		const id = req.params.id;
+        // get the id that needs to be deleted
+        const deleteThis = req.params.id;
 
-		// var to store the index of products array to be erased
-		let eraseThis = null;
+        // create a new array with all the elements EXCLUDING
+        // the ID in deleteThis
+        const filteredUsers = users.filter( user => {
+            return user.id != deleteThis;
+        });
 
-		// find the array index where the id is
-		users.forEach( (person, index) => {
-			if (person.id === id) {
-				eraseThis = index;
-			}
-		});
+        // convert format and write the new array to file
+        const usersJSON = JSON.stringify(filteredUsers , null, "\t");
+        fs.writeFileSync(usersFilePath, usersJSON);
 
-		// remove the index from the array
-		users.splice(eraseThis, 1);
+        res.redirect("/users/list");
+        
+    
+	},
 
-		// write the changes to the JSON file
-		const usersJSON = JSON.stringify(users, null, "\t");
-		fs.writeFileSync(usersFilePath, usersJSON);
+
+    editar: function (req, res) {
+
+        const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+
+        let user = users.find(users => users.id == req.params.id);
+        
+        res.render("users/user-edit", {user: user});
+
+    },
+
+    update: function (req, res) {
+
+        const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+
+        const idConvertido = parseInt(req.params.id);
+
+        const usuarioEditado = {
+            id: idConvertido,
+            nombre: req.body.nombre,
+            email: req.body.email,
+        }
+
+        let usersAll = users.filter(user => user.id != req.params.id);
+
+        usersAll.push(usuarioEditado);
+
+        let usuariosJSON =  JSON.stringify(usersAll, null, " ");
+		fs.writeFileSync(usersFilePath, usuariosJSON);
 
 		res.redirect("/users/list");
 
-
-	}
-
+    }
 
     
 }
