@@ -3,6 +3,16 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
+const morgan = require("morgan");
+
+
+//requerimientos de routes
+const mainRouter = require("./routes/main");
+const usersRouter = require("./routes/users");
+const productsRouter = require("./routes/products");
+const abmRouter = require("./routes/abm");
+
+app.use(morgan("dev"));
 
 app.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
 const puertoExpress = 3030;
@@ -18,11 +28,7 @@ app.use(express.json());
 const publicPath = path.resolve(__dirname, "../public");
 app.use(express.static(publicPath));
 
-//requerimientos de routes
-const mainRouter = require("./routes/main");
-const usersRouter = require("./routes/users");
-const productsRouter = require("./routes/products");
-const abmRouter = require("./routes/abm");
+
 
 
 

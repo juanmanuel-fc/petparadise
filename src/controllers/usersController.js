@@ -6,7 +6,7 @@ const productsController = require("./productsController");
 const { edit } = require("./productsController");
 
 const usersFilePath = path.join(__dirname, "../data/usuariosDataBase.json");
-const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+
 
 let usersController = {
     
@@ -20,6 +20,7 @@ let usersController = {
 
     createUser: function (req, res) {
 
+        const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
         
         const resultValidation = validationResult(req);
 
@@ -64,11 +65,16 @@ let usersController = {
 
     list: function (req, res) {
 
+        const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+
+        // console.log("users");
         res.render("users/list", {users: users});
 
     },
 
     confirmarEliminar: (req, res) => {
+
+        const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 
         const deleteThis = parseInt(req.params.id);
 
@@ -88,6 +94,8 @@ let usersController = {
 
     // // Delete - Delete one product from DB
 	destroy: function (req, res) {
+
+        const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 		
         // get the id that needs to be deleted
         const deleteThis = req.params.id;
@@ -110,6 +118,8 @@ let usersController = {
 
     editar: function (req, res) {
 
+        const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+
         let user = users.find(users => users.id == req.params.id);
         
         res.render("users/user-edit", {user: user});
@@ -118,8 +128,12 @@ let usersController = {
 
     update: function (req, res) {
 
+        const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+
+        const idConvertido = parseInt(req.params.id);
+
         const usuarioEditado = {
-            id: req.params.id,
+            id: idConvertido,
             nombre: req.body.nombre,
             email: req.body.email,
         }

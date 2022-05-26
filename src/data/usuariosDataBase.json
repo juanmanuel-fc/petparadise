@@ -1,51 +1,22 @@
 [
 	{
-		"id": 2,
-		"nombre": "Juanma Fernandez",
-		"email": "juanma@juanma.com",
-		"password": "123456789",
-		"terminos": "on"
-	},
-	{
-		"id": 3,
-		"nombre": "Karen Todel",
-		"email": "karen@karen.com",
-		"password": "123456789",
-		"terminos": "on"
-	},
-	{
-		"id": 4,
-		"nombre": "Nico Manuel",
-		"email": "nico@nico.com.ar",
-		"password": "12345678",
-		"terminos": "on"
+		"id": 19,
+		"nombre": "Ernestro JUan Perez ",
+		"email": "perez@perez.com"
 	},
 	{
 		"id": 5,
-		"nombre": "Micki Chiara",
-		"email": "micalea@micaela.com",
-		"password": "123456789",
-		"terminos": "on"
+		"nombre": "Micaela Chiara  jaja",
+		"email": "micalea@micaela.com"
+	},
+	{
+		"id": 4,
+		"nombre": "Nico Manuel  123",
+		"email": "nico@nico.com.ar"
 	},
 	{
 		"id": 6,
-		"nombre": "Daniel Acevedo",
-		"email": "daniel@daniel.com",
-		"password": "999999999",
-		"terminos": "on"
-	},
-	{
-		"id": 7,
-		"nombre": "Valentin",
-		"email": "valentin@valentin.com.ar",
-		"password": "123456789",
-		"terminos": "on"
-	},
-	{
-		"id": 19,
-		"nombre": "Ernestro Perez",
-		"email": "perez@perez.com",
-		"password": "9999999999",
-		"terminos": "on"
+		"nombre": "Daniel Acevedo  ",
+		"email": "daniel@daniel.com"
 	}
 ]
