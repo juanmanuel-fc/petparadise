@@ -30,9 +30,6 @@ app.use(express.static(publicPath));
 
 
 
-
-
-
 app.listen(process.env.PORT || puertoExpress, () => {
     console.log("Server corriendo en el puerto ", puertoExpress);
 })
@@ -43,9 +40,6 @@ app.listen(process.env.PORT || puertoExpress, () => {
 app.use("/",mainRouter); 
 app.use("/carrito", mainRouter);
 
-//users
-// app.use("/", usersRouter);
-// app.use("/register", usersRouter);
 
 //users
 app.use("/users", usersRouter);
