@@ -207,9 +207,7 @@ main {
 
 }
 
-.eliminar {
-    color: #d00;
-}
+
 
 .button__destroy {
     font-size: 16px;
@@ -223,6 +221,10 @@ main {
     cursor: pointer;
 }
 
+#main__link-eliminar {
+    color: #cc0000;
+    font-weight: bold;
+}
 
 
 
