@@ -11,7 +11,7 @@ const usersFilePath = path.join(__dirname, "../data/usuariosDataBase.json");
 let usersController = {
     
     login: function(req,res){
-        res.render("users/login");
+        res.render("users/login", {usuario: req.session.usuario});
     },
     
     register: function(req,res){
@@ -147,7 +147,30 @@ let usersController = {
 
 		res.redirect("/users/list");
 
+    },
+    //posteo del loging para guardar la cookie JUANAMA HACE LAS VALIDACIONES DEL LOGING ACA
+    posteo: function(req, res) {
+
+        
+        req.session.usuario = req.body.usuario
+        // if(!req.session.usuario && req.cookies.recordame){
+        // req.session.usuario = req.cookies.recordame
+        // }
+
+        if(req.body.recordame != undefined){
+            res.cookie("recordame", req.body.usuario, {maxAge: 90000})
+        }
+
+
+        res.render("users/exito",{usuario: req.session.usuario})
+    },
+    saludo: function (req,res){
+        res.render("users/exito",{
+            usuario: req.session.usuario
+            
+        })
     }
+
 
     
 }

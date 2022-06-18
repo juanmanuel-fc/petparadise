@@ -4,6 +4,11 @@ const app = express();
 const path = require("path");
 const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
 const morgan = require("morgan");
+const session = require("express-session")
+const cookieParser = require("cookie-parser")
+const recordame = require("./middlewares/recordameMiddleware")
+
+
 
 
 //requerimientos de routes
@@ -12,7 +17,13 @@ const usersRouter = require("./routes/users");
 const productsRouter = require("./routes/products");
 const abmRouter = require("./routes/abm");
 
+//REQUERIMIENTOS
 app.use(morgan("dev"));
+app.use(session({secret: "Secreto",  resave: true, saveUninitialized: true}))
+app.use(cookieParser());
+app.use(recordame);
+
+
 
 app.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
 const puertoExpress = 3030;

@@ -8,7 +8,7 @@ let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 let mainController = {
     index: function(req,res){
-        res.render("main/index", {products: products})
+        res.render("main/index", {products: products, usuario: req.session.usuario})
 
     },
     carrito: function(req,res){

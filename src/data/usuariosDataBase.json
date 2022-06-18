@@ -18,5 +18,12 @@
 		"id": 6,
 		"nombre": "Daniel Acevedo  ",
 		"email": "daniel@daniel.com"
+	},
+	{
+		"id": 20,
+		"nombre": "daniel",
+		"email": "daniav9924@gmail.com",
+		"password": "333333333",
+		"terminos": "on"
 	}
 ]

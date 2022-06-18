@@ -37,6 +37,9 @@ router.delete("/destroy/:id", usersController.destroy);
 router.get('/editar/:id', usersController.editar);
 router.put("/editar/:id", usersController.update);
 
+router.get("/exito", usersController.saludo);
+router.post("/exito", usersController.posteo);
+
 
 //exportar el router
 module.exports = router;
